@@ -8,33 +8,33 @@ const TABS = [
   {
     label: "Agentic research",
     eyebrow: "agentic research",
-    title: "Your Science-Grade AI Partner for R&D",
+    title: "Your Research-Grade AI Partner for R&D",
     description:
-      "From complex questions, to full scientific workflows. Domain-specialized AI agents plan, search, reason and conclude behind a clean chat interface, speeding you from hypothesis to evidence-backed decision in minutes and hours, not days and weeks.",
+      "From complex questions to full scientific workflows. Domain-specialized AI agents search the literature, design methodologies, analyze data, discover funding, and draft manuscripts — turning weeks of groundwork into hours.",
     link: "LEARN MORE",
   },
   {
-    label: "BIO GRAPH",
-    eyebrow: "BIO GRAPH",
-    title: "Cause-and-Effect Biology At A Glance",
+    label: "Collaborative Workspace",
+    eyebrow: "COLLABORATIVE WORKSPACE",
+    title: "Your team in one Research Environment",
     description:
-      "Accelerate understanding and inform choices with a view into deep biology. Visualize pathways and mechanisms, uncover non-obvious hypotheses, and prioritize actionable targets and biomarkers with confidence.",
+      "Bring your lab or R&D group into a shared workspace where your team and AI agents collaborate side by side. All your research files, documents, and datasets in one place, with project task management, persistent context that remembers your research goals across sessions, and real-time co-editing across every document type.",
     link: "LEARN MORE",
   },
   {
-    label: "pipeline graph",
-    eyebrow: "PIPELINE GRAPH",
-    title: "Science Meets Competitive Intelligence",
+    label: "Integrated Editors",
+    eyebrow: "INTEGRATED EDITORS",
+    title: "Every Research Tool, Native and Agent-Ready",
     description:
-      "Unify pipeline intelligence with deep biology to compare programs, spot white space, and de-risk target and portfolio decisions. Visualize the commercial landscape - assets, competitors, and pipelines - in an interactive environment that gets you informed, fast.",
+      "Full-featured Word, Excel, PowerPoint, and LaTeX editors built directly into the workspace — with 1:1 parity to desktop. A scientific canvas editor with 1,000+ icons for publication-grade figures. A Python and R computation environment for statistics, visualizations, and bioinformatics pipelines. Every tool is agent-compatible — your AI works inside the same editors you do, in real time.",
     link: "LEARN MORE",
   },
   {
-    label: "PRIVATE DATA",
+    label: "Private Data",
     eyebrow: "PRIVATE DATA",
-    title: "Amplify R&D With Your IP",
+    title: "Accelerate R&D With Your IP",
     description:
-      "Bring Enjamb intelligence to your science securely for richer research relevance, and faster insights across internal and external data. With a 'single source of truth', you'll build enterprise-wide continuity - and shared intelligence that compounds over time.",
+      "Bring Enjamb's Agentic intelligence to your science securely for richer context and faster insights across internal and external data. With enterprise-grade isolation, your team's files, datasets, and institutional knowledge become a single source of truth that your agents and team build on.",
     link: "LEARN MORE",
   },
 ] as const;
@@ -56,16 +56,16 @@ export function PlatformSection() {
 
           {/* H2 Heading - full width */}
           <h2 className="font-heading text-[48px] font-medium leading-[57.6px] text-[#101F33]">
-            An enterprise AI workspace for science-backed decisions
+            An enterprise AI workspace for rigorous, end-to-end research
           </h2>
 
           {/* Description - full width */}
           <p className="font-body text-[18px] font-light leading-[27px] text-[#55677E]">
-            Enjamb aligns R&D teams around scientific and commercial insight at
-            speed for faster, stronger outcomes. Empower your enterprise with
-            precision evidence retrieval, governed scientific reasoning, and
-            specialized agentic automation within a purpose-built, frictionless
-            platform.
+            Enjamb aligns research teams around scientific discovery and
+            execution at speed — from literature to methodology to final output.
+            Empower your team with precision source retrieval, governed
+            scientific reasoning, and specialized agentic automation within a
+            purpose-built collaborative workspace.
           </p>
         </div>
 

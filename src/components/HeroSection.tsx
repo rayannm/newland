@@ -75,15 +75,14 @@ export function HeroSection() {
                 </div>
 
                 <h1 className="font-heading text-[36px] font-medium leading-[1.2] text-white md:text-[50px] lg:text-[64px]">
-                  Unlock R&D decision velocity with the Agentic AI
-                  platform for life sciences
+                  Unlock Research Velocity with the Agentic workspace
+                  for R&D teams.
                 </h1>
 
                 <p className="mt-4 max-w-[38rem] font-body text-[17px] leading-[1.55] tracking-[-0.015em] text-white/80">
-                  Enjamb accelerates enterprises through discovery and
-                  development with scientific rigor - turning evidence into
-                  decision-ready intelligence, and best practice into repeatable
-                  execution at scale.
+                  Enjamb accelerates every stage of research — literature
+                  review, methodology, data analysis, grants, and drafting —
+                  with scientific rigor and repeatable execution at scale.
                 </p>
 
                 <div className="mt-8 flex items-center gap-3">
