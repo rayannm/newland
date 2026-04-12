@@ -2,6 +2,7 @@ import { AnnouncementBanner } from "@/components/AnnouncementBanner";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { PlatformSection } from "@/components/PlatformSection";
+import { FeaturesSection } from "@/components/FeaturesSection";
 import { UseCasesSection } from "@/components/UseCasesSection";
 import { WhyEnjambSection } from "@/components/WhyEnjambSection";
 import { TestimonialSection } from "@/components/TestimonialSection";
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <PlatformSection />
+        <FeaturesSection />
         <UseCasesSection />
         <WhyEnjambSection />
         <TestimonialSection />
