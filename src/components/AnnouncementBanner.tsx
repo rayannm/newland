@@ -16,7 +16,7 @@ export function AnnouncementBanner() {
         </span>
         <span>
           Learn from Pulitzer Prize winning author Dr. Siddhartha Mukherjee in a
-          conversation with Causaly on the New Pace of Drug Discovery.
+          conversation with Enjamb on the New Pace of Drug Discovery.
         </span>
         <a href="#" className="whitespace-nowrap underline">
           Access the recording here.

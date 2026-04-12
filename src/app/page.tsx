@@ -3,7 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { PlatformSection } from "@/components/PlatformSection";
 import { UseCasesSection } from "@/components/UseCasesSection";
-import { WhyCausalySection } from "@/components/WhyCausalySection";
+import { WhyEnjambSection } from "@/components/WhyEnjambSection";
 import { TestimonialSection } from "@/components/TestimonialSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { CTASection } from "@/components/CTASection";
@@ -18,7 +18,7 @@ export default function Home() {
         <HeroSection />
         <PlatformSection />
         <UseCasesSection />
-        <WhyCausalySection />
+        <WhyEnjambSection />
         <TestimonialSection />
         <ServicesSection />
         <CTASection />

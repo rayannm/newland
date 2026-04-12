@@ -34,7 +34,7 @@ const TABS = [
     eyebrow: "PRIVATE DATA",
     title: "Amplify R&D With Your IP",
     description:
-      "Bring Causaly intelligence to your science securely for richer research relevance, and faster insights across internal and external data. With a 'single source of truth', you'll build enterprise-wide continuity - and shared intelligence that compounds over time.",
+      "Bring Enjamb intelligence to your science securely for richer research relevance, and faster insights across internal and external data. With a 'single source of truth', you'll build enterprise-wide continuity - and shared intelligence that compounds over time.",
     link: "LEARN MORE",
   },
 ] as const;
@@ -51,7 +51,7 @@ export function PlatformSection() {
         <div className="flex flex-col gap-6 pt-20">
           {/* Eyebrow */}
           <p className="font-body text-[16px] font-medium uppercase leading-[1.5] tracking-[3.2px] text-[#55677E]">
-            CAUSALY PLATFORM
+            ENJAMB PLATFORM
           </p>
 
           {/* H2 Heading - full width */}
@@ -61,7 +61,7 @@ export function PlatformSection() {
 
           {/* Description - full width */}
           <p className="font-body text-[18px] font-light leading-[27px] text-[#55677E]">
-            Causaly aligns R&D teams around scientific and commercial insight at
+            Enjamb aligns R&D teams around scientific and commercial insight at
             speed for faster, stronger outcomes. Empower your enterprise with
             precision evidence retrieval, governed scientific reasoning, and
             specialized agentic automation within a purpose-built, frictionless
@@ -126,7 +126,7 @@ export function PlatformSection() {
             <div className="relative aspect-[16/10] w-full">
               <Image
                 src="/images/platform/platform-screenshot.avif"
-                alt={`${currentTab.title} - Causaly platform screenshot`}
+                alt={`${currentTab.title} - Enjamb platform screenshot`}
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

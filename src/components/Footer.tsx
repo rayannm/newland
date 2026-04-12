@@ -1,4 +1,4 @@
-import { CausalyLogo, LinkedInIcon } from "@/components/icons";
+import { EnjambLogo, LinkedInIcon } from "@/components/icons";
 
 const footerLinkGroups = [
   {
@@ -6,7 +6,7 @@ const footerLinkGroups = [
     links: [{ label: "Login", href: "#" }],
   },
   {
-    title: "Causaly",
+    title: "Enjamb",
     links: [
       { label: "About", href: "#" },
       { label: "Request a demo", href: "#" },
@@ -33,7 +33,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-[5%] lg:grid-cols-[360px_288px_288px_288px]">
           {/* Col 1: Logo + description + social */}
           <div>
-            <CausalyLogo className="text-[#101F33]" />
+            <EnjambLogo className="text-[#101F33]" />
             <p className="font-body mt-4 max-w-[350px] text-sm leading-relaxed text-[#55677E]">
               Unlock scientific insights from external and internal information
               at unprecedented levels of precision and efficiency.
@@ -70,7 +70,7 @@ export function Footer() {
         {/* Footer bottom */}
         <div className="mt-12 flex items-center justify-between border-t border-[#687E9B]/60 pt-5">
           <p className="font-body text-sm text-[#55677E]">
-            &copy; 2026 Causaly. All rights reserved.
+            &copy; 2026 Enjamb. All rights reserved.
           </p>
         </div>
       </div>

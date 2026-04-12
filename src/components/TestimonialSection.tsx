@@ -5,7 +5,7 @@ export function TestimonialSection() {
         <h2 className="mx-auto max-w-[800px] font-heading text-[24px] font-medium italic leading-relaxed text-white">
           &ldquo;We previously conducted a big proteomics study on a clinical
           trial where we were trying to see patterns in the data. Initially we
-          didn&apos;t find much, but when I went back with Causaly, I kept
+          didn&apos;t find much, but when I went back with Enjamb, I kept
           saying &lsquo;hey, we missed that.&rsquo;&rdquo;
         </h2>
 

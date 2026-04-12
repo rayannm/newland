@@ -2,26 +2,26 @@ const features = [
   {
     title: "Continuity and quality, end-to-end",
     description:
-      "Comprehensive evidence-backed outputs are co-ordinated by Causaly\u2019s governed Agentic Orchestration framework. Tools, models and data are carefully selected for agents which collaborate, cross-validate, and handoff seamlessly, with thorough quality control at every step.",
+      "Comprehensive evidence-backed outputs are co-ordinated by Enjamb\u2019s governed Agentic Orchestration framework. Tools, models and data are carefully selected for agents which collaborate, cross-validate, and handoff seamlessly, with thorough quality control at every step.",
   },
   {
     title: "Rigorous, relevant scientific search",
     description:
-      "Causaly interprets your scientific intent for richer results, ranking and selecting only the most accurate, traceable, relevant evidence to respond. Our Scientific Information Retrieval System (SIRS) recognises no-answer scenarios, filters for hallucination, and returns cited, hyper-relevant, science-backed insights.",
+      "Enjamb interprets your scientific intent for richer results, ranking and selecting only the most accurate, traceable, relevant evidence to respond. Our Scientific Information Retrieval System (SIRS) recognises no-answer scenarios, filters for hallucination, and returns cited, hyper-relevant, science-backed insights.",
   },
   {
     title: "Grounded in fact, not fiction",
     description:
-      "Causaly\u2019s strict factual grounding leads to outputs you can trust. A high-precision Scientific Knowledge Graph imbues Causaly search, evidence, reasoning, and insight with relational meaning from 500M facts and 70M directional relationships - and a Commercial Knowledge Graph provides intel from the drug landscape mapped in comprehensive detail.",
+      "Enjamb\u2019s strict factual grounding leads to outputs you can trust. A high-precision Scientific Knowledge Graph imbues Enjamb search, evidence, reasoning, and insight with relational meaning from 500M facts and 70M directional relationships - and a Commercial Knowledge Graph provides intel from the drug landscape mapped in comprehensive detail.",
   },
   {
     title: "Firm data foundations",
     description:
-      "Causaly\u2019s flexible, expansive Enterprise Data Fabric keeps evidence foundations current and alerts you to updates. Data pipelines scan millions of sources to ingest, index and extract data from 100k+ documents per day across multiple file types - and allow integration of your data, MCPs, APIs, or agentic AI frameworks.",
+      "Enjamb\u2019s flexible, expansive Enterprise Data Fabric keeps evidence foundations current and alerts you to updates. Data pipelines scan millions of sources to ingest, index and extract data from 100k+ documents per day across multiple file types - and allow integration of your data, MCPs, APIs, or agentic AI frameworks.",
   },
 ];
 
-export function WhyCausalySection() {
+export function WhyEnjambSection() {
   return (
     <section className="w-full bg-white">
       <div className="mx-auto max-w-[1440px] px-[5%]">
@@ -31,7 +31,7 @@ export function WhyCausalySection() {
             {/* Col 1: overline + H2 */}
             <div className="flex flex-col gap-4 lg:w-[45%]">
               <p className="font-body text-[16px] font-medium uppercase tracking-[3.2px] text-[#55677E]">
-                What makes Causaly different
+                What makes Enjamb different
               </p>
               <h2 className="font-heading text-[32px] font-medium leading-[1.15] text-[#101F33] md:text-[48px]">
                 AI for high-stakes science.
@@ -47,7 +47,7 @@ export function WhyCausalySection() {
                 answers, not just conversational fluency.
                 <br />
                 <br />
-                Every layer of Causaly&apos;s advanced technology infrastructure
+                Every layer of Enjamb&apos;s advanced technology infrastructure
                 is purpose-built for scientific intelligence, and scientific
                 execution.
               </p>

@@ -29,7 +29,7 @@ export function HeroSection() {
 
             {/* Subtitle */}
             <p className="max-w-[662px] font-body text-[16px] font-light leading-[1.5] text-[#55677E] md:text-[18px]">
-              Causaly accelerates enterprises through discovery and development
+              Enjamb accelerates enterprises through discovery and development
               with scientific rigor - turning evidence into decision-ready
               intelligence, and best practice into repeatable execution at scale.
             </p>

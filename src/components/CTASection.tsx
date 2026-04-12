@@ -18,7 +18,7 @@ export function CTASection() {
               {/* Heading wrapper */}
               <div className="py-12">
                 <h2 className="font-heading text-[32px] font-medium leading-tight text-[#101F33] md:text-[48px]">
-                  Get started with Causaly
+                  Get started with Enjamb
                 </h2>
               </div>
 
@@ -37,7 +37,7 @@ export function CTASection() {
           <div className="flex flex-1 flex-col justify-center py-8">
             <p className="font-body text-[16px] font-light leading-relaxed text-[#55677E] md:text-[18px]">
               Ready to transform the way your R&amp;D teams discover and
-              deliver? Take the first step - see Causaly for yourself.
+              deliver? Take the first step - see Enjamb for yourself.
             </p>
             <a
               href="#"

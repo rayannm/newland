@@ -16,7 +16,7 @@ export function ServicesSection() {
             </h2>
 
             <p className="mt-6 font-body text-[16px] font-light leading-[27px] text-[#55677E] md:text-[18px]">
-              Leverage the expertise of Causaly&apos;s PhD scientists to optimize
+              Leverage the expertise of Enjamb&apos;s PhD scientists to optimize
               the way your R&amp;D teams work, codify your specialized workflows,
               and accelerate the scientific decisions that really matter.
               <br />

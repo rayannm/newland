@@ -48,7 +48,7 @@ export function UseCasesSection() {
           {/* Description - wider */}
           <p className="mb-12 font-body text-[18px] font-light leading-[27px] text-[#687E9B]">
             From early research, through clinical development, to post-market -
-            life sciences enterprises choose Causaly to execute, automate, and
+            life sciences enterprises choose Enjamb to execute, automate, and
             accelerate vital scientific workflows and use cases that are key to
             success.
           </p>

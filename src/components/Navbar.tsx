@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { CausalyLogo, ChevronDownIcon, HamburgerIcon } from "@/components/icons";
+import { EnjambLogo, ChevronDownIcon, HamburgerIcon } from "@/components/icons";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -33,8 +33,8 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-[70px] max-w-[1440px] items-center justify-between px-[5%]">
         {/* Logo */}
-        <Link href="/" aria-label="Causaly Home">
-          <CausalyLogo className="h-8 w-[162px] text-[#101F33]" />
+        <Link href="/" aria-label="Enjamb Home">
+          <EnjambLogo className="h-8 w-[162px] text-[#101F33]" />
         </Link>
 
         {/* Center Nav Links - hidden below lg */}
