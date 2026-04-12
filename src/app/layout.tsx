@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "Enjamb accelerates enterprises through discovery and development with scientific rigor - turning evidence into decision-ready intelligence, and best practice into repeatable execution at scale.",
   icons: {
-    icon: "/seo/favicon-32.png",
+    icon: "/seo/favicon.ico",
     apple: "/seo/favicon-256.png",
   },
 };

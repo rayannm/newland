@@ -24,7 +24,7 @@ const features = [
 export function WhyEnjambSection() {
   return (
     <section className="w-full bg-white">
-      <div className="mx-auto max-w-[1440px] px-[5%]">
+      <div className="mx-auto max-w-[1560px] px-[5%]">
         <div className="py-20">
           {/* Heading composition - two columns side by side */}
           <div className="flex flex-col gap-8 lg:flex-row lg:gap-[10%]">

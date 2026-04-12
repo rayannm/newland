@@ -1,7 +1,7 @@
 export function ServicesSection() {
   return (
     <section className="w-full bg-white">
-      <div className="mx-auto max-w-[1440px] px-[5%]">
+      <div className="mx-auto max-w-[1560px] px-[5%]">
         {/* Vertical + horizontal borders wrapper */}
         <div className="border-x border-t border-[#D4DFE4]">
           <div className="px-[60px] pt-[80px] pb-[64px]">

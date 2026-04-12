@@ -46,7 +46,7 @@ export function PlatformSection() {
 
   return (
     <section className="w-full bg-white">
-      <div className="mx-auto max-w-[1440px] px-[5%]">
+      <div className="mx-auto max-w-[1560px] px-[4.5%]">
         {/* Heading composition - NO extra inner padding, sits at container edge */}
         <div className="flex flex-col gap-6 pt-20">
           {/* Eyebrow */}
@@ -91,7 +91,7 @@ export function PlatformSection() {
         {/* Tab Content - bordered box with two equal columns */}
         <div
           key={activeTab}
-          className="flex flex-col border border-[#D4DFE4] lg:flex-row"
+          className="flex flex-col border border-[#D4DFE4] lg:min-h-[500px] lg:flex-row"
         >
           {/* Left side - text content */}
           <div className="flex w-full flex-col justify-center lg:w-1/2 lg:border-r lg:border-[#D4DFE4]">
@@ -134,6 +134,9 @@ export function PlatformSection() {
             </div>
           </div>
         </div>
+
+        {/* Bottom padding + line */}
+        <div className="border-b border-[#D4DFE4] pb-20" />
       </div>
     </section>
   );

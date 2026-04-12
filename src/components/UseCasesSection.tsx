@@ -32,7 +32,7 @@ const useCases: UseCaseCard[] = [
 export function UseCasesSection() {
   return (
     <section className="w-full bg-[#101F33]">
-      <div className="mx-auto max-w-[1440px] px-[5%]">
+      <div className="mx-auto max-w-[1560px] px-[4.5%]">
         {/* Vertical border lines */}
         <div className="border-x border-[#1e3a5c] px-[60px] py-20">
           {/* Eyebrow */}

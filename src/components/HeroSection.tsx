@@ -1,67 +1,158 @@
-import Image from "next/image";
-
-const logos = [
-  { src: "/images/logos/loreal.avif", alt: "L'Oreal", width: 142, height: 26 },
-  { src: "/images/logos/ipsen.avif", alt: "Ipsen", width: 123, height: 35 },
-  { src: "/images/logos/lupin.png", alt: "Lupin", width: 57, height: 68 },
-  { src: "/images/logos/teva.avif", alt: "Teva", width: 130, height: 47 },
-  { src: "/images/logos/ucb.avif", alt: "UCB", width: 60, height: 60 },
-  { src: "/images/logos/eisai.avif", alt: "Eisai", width: 100, height: 60 },
-  { src: "/images/logos/proqr.avif", alt: "ProQR", width: 80, height: 75 },
-  { src: "/images/logos/scripps.avif", alt: "Scripps", width: 140, height: 50 },
+const institutionLogos = [
+  { src: "/images/institutions/1.png", alt: "Institution 1" },
+  { src: "/images/institutions/2.png", alt: "Institution 2" },
+  { src: "/images/institutions/3.png", alt: "Institution 3" },
+  { src: "/images/institutions/4.png", alt: "Institution 4" },
+  { src: "/images/institutions/5.png", alt: "Institution 5" },
+  { src: "/images/institutions/ycombinator-full.png", alt: "Y Combinator" },
+  { src: "/images/institutions/6.png", alt: "Institution 6" },
+  { src: "/images/institutions/7.png", alt: "Institution 7" },
+  { src: "/images/institutions/8.png", alt: "Institution 8" },
+  { src: "/images/institutions/9.png", alt: "Institution 9" },
+  { src: "/images/institutions/10.png", alt: "Institution 10" },
 ];
 
 export function HeroSection() {
   return (
     <section className="relative w-full border-b border-[#D4DFE4]">
-      <div className="mx-auto max-w-[1440px] px-[5%]">
-        {/* Hero content */}
-        <div className="pt-[100px] pb-16 lg:pt-[140px] lg:pb-24">
-          <div className="flex max-w-[771px] flex-col gap-6">
-            {/* Heading */}
-            <h1 className="font-heading text-[36px] font-medium leading-[1.2] text-[#101F33] md:text-[50px] lg:text-[64px]">
-              Unlock{" "}
-              <span className="text-[#FF5038]">R&D decision velocity</span>{" "}
-              with the{" "}
-              <span className="text-[#3C1FFA]">Agentic AI platform</span>{" "}
-              for life sciences
-            </h1>
+      <style>{`
+        @keyframes scroll-logos {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
 
-            {/* Subtitle */}
-            <p className="max-w-[662px] font-body text-[16px] font-light leading-[1.5] text-[#55677E] md:text-[18px]">
-              Enjamb accelerates enterprises through discovery and development
-              with scientific rigor - turning evidence into decision-ready
-              intelligence, and best practice into repeatable execution at scale.
-            </p>
-
-            {/* CTA Button */}
-            <a
-              href="#request-demo"
-              className="mt-[8px] inline-block self-start rounded-[4px] bg-[#101F33] px-8 py-4 text-[16px] font-medium uppercase text-white transition-colors hover:bg-[#1a2f47] md:text-[20px]"
+      {/* Hero block */}
+      <div className="mx-auto max-w-[1560px] px-[5%]">
+        <div
+          className="relative mt-10 overflow-hidden lg:h-[720px]"
+          style={{
+            backgroundImage: "url(/images/landscape-oil.png)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundColor: "#10131a",
+          }}
+        >
+          {/* Grid: left glass panel + right shows painting */}
+          <div className="grid h-full lg:grid-cols-[720px_minmax(0,1fr)]">
+            {/* Left column - glass panel */}
+            <div
+              className="relative flex h-full flex-col justify-center px-10 py-16 lg:px-12 lg:py-16"
+              style={{
+                background:
+                  "linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02) 48%, rgba(255,255,255,0.04)), rgba(16,19,26,0.72)",
+                backdropFilter: "blur(22px) saturate(195%)",
+                WebkitBackdropFilter: "blur(22px) saturate(195%)",
+                borderRight: "1px solid rgba(255,255,255,0.08)",
+                boxShadow:
+                  "0 18px 50px rgba(15,23,42,0.2), inset 0 1px 0 rgba(255,255,255,0.12)",
+              }}
             >
-              Request a Demo
-            </a>
+              {/* Glass shimmer overlay */}
+              <div
+                className="pointer-events-none absolute inset-0"
+                style={{
+                  background:
+                    "linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02) 52%, rgba(255,255,255,0.06)), radial-gradient(circle at top left, rgba(255,255,255,0.12), transparent 52%)",
+                }}
+              />
+
+              <div className="relative z-10 flex max-w-[600px] flex-col">
+                {/* Backed by */}
+                <div className="mb-10 flex flex-wrap items-center gap-2 text-lg font-medium tracking-tight text-white">
+                  <span>Backed by</span>
+                  <a href="#" className="flex items-center gap-1.5 text-white transition-opacity hover:opacity-80">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/images/logos/ycombinator.svg" width={18} height={18} alt="Y Combinator Logo" />
+                    <span className="hidden md:inline">Combinator</span>
+                  </a>
+                  <span style={{ opacity: 0.6 }}>&amp;</span>
+                  <a href="#" className="flex items-center gap-1.5 text-white transition-opacity hover:opacity-80">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/images/logos/founders-inc.jpg" width={18} height={18} alt="Founders, Inc. Logo" className="rounded-sm" />
+                    <span className="hidden md:inline">Founders, Inc</span>
+                  </a>
+                </div>
+
+                <h1 className="font-heading text-[36px] font-medium leading-[1.2] text-white md:text-[50px] lg:text-[64px]">
+                  Unlock R&D decision velocity with the Agentic AI
+                  platform for life sciences
+                </h1>
+
+                <p className="mt-4 max-w-[38rem] font-body text-[17px] leading-[1.55] tracking-[-0.015em] text-white/80">
+                  Enjamb accelerates enterprises through discovery and
+                  development with scientific rigor - turning evidence into
+                  decision-ready intelligence, and best practice into repeatable
+                  execution at scale.
+                </p>
+
+                <div className="mt-8 flex items-center gap-3">
+                  <a
+                    href="#"
+                    className="inline-block bg-black px-6 py-3 font-body text-sm font-medium text-white"
+                  >
+                    Log in
+                  </a>
+                  <a
+                    href="#request-demo"
+                    className="inline-block bg-neutral-500 px-6 py-3 font-body text-sm font-medium text-white transition-colors hover:bg-neutral-700"
+                  >
+                    Request a Demo &rarr;
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Right column - painting shows through */}
+            <div className="relative hidden lg:block" />
+          </div>
+        </div>
+      </div>
+
+      {/* Trusted by researchers - scrolling logos */}
+      <div className="mx-auto max-w-[1560px] px-[5%]">
+        <div className="flex items-center py-4">
+          <div className="shrink-0 border-r border-[#D4DFE4] pr-6">
+            <p className="text-sm text-[#55677E]">
+              Trusted by researchers at<br /> leading institutions
+            </p>
+          </div>
+          <div
+            className="flex-1 overflow-hidden pl-6"
+            style={{
+              maskImage:
+                "linear-gradient(to right, black 0%, black calc(100% - 48px), transparent 100%)",
+              WebkitMaskImage:
+                "linear-gradient(to right, black 0%, black calc(100% - 48px), transparent 100%)",
+            }}
+          >
+            <div
+              className="flex items-center hover:[animation-play-state:paused]"
+              style={{
+                gap: "56px",
+                animation: "scroll-logos 40s linear infinite",
+                width: "max-content",
+              }}
+            >
+              {[...institutionLogos, ...institutionLogos].map((logo, i) => (
+                <div
+                  key={i}
+                  className="flex shrink-0 items-center justify-center"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    className="h-9 w-auto object-contain"
+                    src={logo.src}
+                    alt={logo.alt}
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
-        {/* Trusted by - separated with consistent spacing */}
-        <div className="pb-10 pt-12">
-          <p className="mb-4 text-[16px] text-[#55677E]">
-            Trusted by the world&apos;s best companies
-          </p>
-          <div className="flex flex-wrap items-center gap-8 lg:flex-nowrap lg:gap-10">
-            {logos.map((logo) => (
-              <Image
-                key={logo.alt}
-                src={logo.src}
-                alt={logo.alt}
-                width={logo.width}
-                height={logo.height}
-                className="max-h-[40px] w-auto object-contain"
-              />
-            ))}
-          </div>
-        </div>
+        <div className="pb-6" />
       </div>
     </section>
   );

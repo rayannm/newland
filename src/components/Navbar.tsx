@@ -1,37 +1,23 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import { EnjambLogo, ChevronDownIcon, HamburgerIcon } from "@/components/icons";
-import { cn } from "@/lib/utils";
 
 const navLinks = [
   { label: "AI PLATFORM", hasDropdown: true },
-  { label: "PRODUCTS", hasDropdown: true },
   { label: "USE CASES", hasDropdown: true },
-  { label: "RESOURCES", hasDropdown: false },
+  { label: "PRICING", hasDropdown: false },
+  { label: "BLOG", hasDropdown: false },
   { label: "ABOUT", hasDropdown: false },
 ];
 
 export function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <nav
-      className={cn(
-        "sticky top-0 z-50 border-b transition-all duration-300",
-        scrolled ? "border-[#D4DFE4] bg-white shadow-sm" : "border-transparent bg-transparent"
-      )}
+      className="sticky top-0 z-50 border-b border-[#D4DFE4] bg-white"
     >
-      <div className="mx-auto flex h-[70px] max-w-[1440px] items-center justify-between px-[5%]">
+      <div className="mx-auto flex h-[70px] max-w-[1560px] items-center justify-between px-[5%]">
         {/* Logo */}
         <Link href="/" aria-label="Enjamb Home">
           <EnjambLogo className="h-8 w-[162px] text-[#101F33]" />
@@ -57,15 +43,16 @@ export function Navbar() {
         <div className="hidden items-center gap-3 lg:flex">
           <a
             href="#"
-            className="rounded-[4px] border border-[#101F33] px-5 py-2 text-sm font-medium uppercase tracking-[1px] text-[#101F33] font-body"
+            className="bg-black px-5 py-2 font-body text-sm font-medium text-white"
           >
-            LOGIN
+            Log in
           </a>
           <a
             href="#"
-            className="rounded-[4px] bg-[#101F33] px-5 py-2 text-sm font-medium uppercase tracking-[1px] text-white font-body"
+            className="flex items-center gap-1.5 bg-neutral-500 px-5 py-2 font-body text-sm font-medium text-white transition-colors hover:bg-neutral-700"
           >
-            REQUEST A DEMO
+            Request a demo
+            <span>&rarr;</span>
           </a>
         </div>
 

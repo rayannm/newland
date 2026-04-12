@@ -28,7 +28,7 @@ const footerLinkGroups = [
 export function Footer() {
   return (
     <footer className="w-full bg-[#D4DFE4]">
-      <div className="mx-auto max-w-[1440px] px-[5%] py-16">
+      <div className="mx-auto max-w-[1560px] px-[5%] py-16">
         {/* Footer top */}
         <div className="grid grid-cols-1 gap-[5%] lg:grid-cols-[360px_288px_288px_288px]">
           {/* Col 1: Logo + description + social */}
