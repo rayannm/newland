@@ -1,3 +1,5 @@
+import { DNAHelix } from "@/components/DNAHelix";
+
 const institutionLogos = [
   { src: "/images/institutions/1.png", alt: "Institution 1" },
   { src: "/images/institutions/2.png", alt: "Institution 2" },
@@ -14,13 +16,18 @@ const institutionLogos = [
 
 export function HeroSection() {
   return (
-    <section className="relative w-full border-b border-[#b08968]">
+    <section className="relative w-full overflow-hidden border-b border-[#b08968]">
       <style>{`
         @keyframes scroll-logos {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
         }
       `}</style>
+
+      {/* Animated ASCII DNA helix in the right whitespace */}
+      <div className="pointer-events-none absolute right-6 top-20 z-10 hidden xl:block">
+        <DNAHelix />
+      </div>
 
       {/* Hero block */}
       <div className="mx-auto max-w-[1560px] px-[5%]">
