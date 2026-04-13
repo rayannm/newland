@@ -91,7 +91,7 @@ export function PlatformSection() {
         {/* Tab Content - bordered box with two equal columns */}
         <div
           key={activeTab}
-          className="flex flex-col border border-[#b08968] lg:min-h-[640px] lg:flex-row"
+          className="flex flex-col border border-[#b08968] lg:min-h-[580px] lg:flex-row"
         >
           {/* Left side - text content */}
           <div className="flex w-full flex-col justify-center lg:w-1/2 lg:border-r lg:border-[#b08968]">
