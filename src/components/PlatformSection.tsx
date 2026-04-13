@@ -45,7 +45,7 @@ export function PlatformSection() {
   const currentTab = TABS[activeTab];
 
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-background">
       <div className="mx-auto max-w-[1560px] px-[4.5%]">
         {/* Heading composition - NO extra inner padding, sits at container edge */}
         <div className="flex flex-col gap-6 pt-20">
@@ -91,10 +91,10 @@ export function PlatformSection() {
         {/* Tab Content - bordered box with two equal columns */}
         <div
           key={activeTab}
-          className="flex flex-col border border-[#D4DFE4] lg:min-h-[500px] lg:flex-row"
+          className="flex flex-col border border-[#b08968] lg:min-h-[500px] lg:flex-row"
         >
           {/* Left side - text content */}
-          <div className="flex w-full flex-col justify-center lg:w-1/2 lg:border-r lg:border-[#D4DFE4]">
+          <div className="flex w-full flex-col justify-center lg:w-1/2 lg:border-r lg:border-[#b08968]">
             <div className="flex flex-col gap-6 p-8 lg:px-[60px] lg:py-[80px]">
               {/* Content eyebrow */}
               <p className="font-body text-[16px] font-medium uppercase leading-[1.5] tracking-[3.2px] text-[#55677E]">
@@ -135,8 +135,8 @@ export function PlatformSection() {
           </div>
         </div>
 
-        {/* Bottom padding + line */}
-        <div className="border-b border-[#D4DFE4] pb-20" />
+        {/* Bottom padding */}
+        <div className="pb-20" />
       </div>
     </section>
   );

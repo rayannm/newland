@@ -1,9 +1,9 @@
 export function ServicesSection() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-background">
       <div className="mx-auto max-w-[1560px] px-[5%]">
         {/* Vertical + horizontal borders wrapper */}
-        <div className="border-x border-t border-[#D4DFE4]">
+        <div className="border-x border-t border-[#b08968]">
           <div className="px-[60px] pt-[80px] pb-[64px]">
             <p className="font-body text-[16px] font-medium uppercase tracking-[3.2px] text-[#55677E]">
               Professional services
@@ -29,10 +29,10 @@ export function ServicesSection() {
           </div>
 
           {/* Empty space with bottom border */}
-          <div className="h-20 border-t border-[#D4DFE4]" />
+          <div className="h-20 border-t border-[#b08968]" />
         </div>
         {/* Bottom horizontal line */}
-        <div className="border-b border-[#D4DFE4]" />
+        <div className="border-b border-[#b08968]" />
       </div>
     </section>
   );

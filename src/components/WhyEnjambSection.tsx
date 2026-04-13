@@ -1,29 +1,29 @@
 const features = [
   {
-    title: "Continuity and quality, end-to-end",
+    title: "Rigor and Quality at every step",
     description:
-      "Comprehensive evidence-backed outputs are co-ordinated by Enjamb\u2019s governed Agentic Orchestration framework. Tools, models and data are carefully selected for agents which collaborate, cross-validate, and handoff seamlessly, with thorough quality control at every step.",
+      "Domain-specialized agents collaborate, cross-validate, and handoff seamlessly through Enjamb\u2019s orchestration framework. Models, tools, and data are carefully selected for each stage of research, with quality control at every step and transparent reasoning visible to your team throughout.",
   },
   {
-    title: "Rigorous, relevant scientific search",
+    title: "Science-Backed Evidence Retrieval",
     description:
-      "Enjamb interprets your scientific intent for richer results, ranking and selecting only the most accurate, traceable, relevant evidence to respond. Our Scientific Information Retrieval System (SIRS) recognises no-answer scenarios, filters for hallucination, and returns cited, hyper-relevant, science-backed insights.",
+      "Enjamb interprets your scientific intent to surface only the most precise, relevant, and traceable evidence, with zero tolerance for hallucination. Direct integrations with Semantic Scholar, PubMed, arXiv, bioRxiv, OpenAlex, grants.gov, and 60+ specialized scientific databases deliver cited, peer-reviewed, deeply-relevant insights your team can trust.",
   },
   {
-    title: "Grounded in fact, not fiction",
+    title: "Transparent by Design",
     description:
-      "Enjamb\u2019s strict factual grounding leads to outputs you can trust. A high-precision Scientific Knowledge Graph imbues Enjamb search, evidence, reasoning, and insight with relational meaning from 500M facts and 70M directional relationships - and a Commercial Knowledge Graph provides intel from the drug landscape mapped in comprehensive detail.",
+      "Every tool call, every source, every reasoning step visible to you in real time. Enjamb agents don\u2019t operate as black boxes. You see what they\u2019re searching, what they\u2019re reading, and how they\u2019re synthesizing, while parallel sub-agents execute research workflows simultaneously to accelerate time-to-insight. Verify every step, audit every output, and trust every result.",
   },
   {
-    title: "Firm data foundations",
+    title: "Built for the Full R&D Stack",
     description:
-      "Enjamb\u2019s flexible, expansive Enterprise Data Fabric keeps evidence foundations current and alerts you to updates. Data pipelines scan millions of sources to ingest, index and extract data from 100k+ documents per day across multiple file types - and allow integration of your data, MCPs, APIs, or agentic AI frameworks.",
+      "From literature to methodology to data analysis to manuscript, Enjamb is the only workspace where agents operate natively across every layer of your research. Full document editors, sandboxed Python and R compute, integrated reference management, and a built-in scientific canvas, unified in one collaborative environment.",
   },
 ];
 
 export function WhyEnjambSection() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-background">
       <div className="mx-auto max-w-[1560px] px-[5%]">
         <div className="py-20">
           {/* Heading composition - two columns side by side */}
@@ -34,7 +34,7 @@ export function WhyEnjambSection() {
                 What makes Enjamb different
               </p>
               <h2 className="font-heading text-[32px] font-medium leading-[1.15] text-[#101F33] md:text-[48px]">
-                AI for high-stakes science.
+                AI for rigorous science.
                 <br />
                 Not generic chat.
               </h2>
@@ -43,8 +43,8 @@ export function WhyEnjambSection() {
             {/* Col 2: description - one paragraph with br breaks */}
             <div className="lg:w-[45%] lg:pt-8">
               <p className="font-body text-[18px] font-light leading-[27px] text-[#55677E]">
-                Life sciences R&amp;D demands relevant, accurate, traceable
-                answers, not just conversational fluency.
+                Research demands relevant, accurate, and executable
+                workflows, not just summaries.
                 <br />
                 <br />
                 Every layer of Enjamb&apos;s advanced technology infrastructure
@@ -55,14 +55,14 @@ export function WhyEnjambSection() {
           </div>
 
           {/* Divider line */}
-          <div className="mt-16 border-t border-[#D4DFE4]" />
+          <div className="mt-16 border-t border-[#b08968]" />
 
           {/* Feature grid - 2 columns */}
           <div className="mt-16 grid grid-cols-1 gap-x-6 gap-y-16 md:grid-cols-2">
             {features.map((feature) => (
               <div key={feature.title} className="flex flex-col gap-6">
                 {/* Icon placeholder */}
-                <div className="h-16 w-16 rounded-lg bg-[#D4DFE4]/50" />
+                <div className="h-16 w-16 rounded-lg bg-[#b08968]/50" />
 
                 <h3 className="font-heading text-[24px] font-medium leading-[33.6px] text-[#101F33]">
                   {feature.title}

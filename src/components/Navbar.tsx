@@ -40,7 +40,7 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 bg-white">
+      <nav className="sticky top-0 z-50 bg-background">
         <div className="mx-auto flex h-[70px] max-w-[1560px] items-center justify-between px-[5%]">
           {/* Logo */}
           <Link href="/" aria-label="Enjamb Home">
@@ -92,7 +92,7 @@ export function Navbar() {
         </div>
 
         {/* Border line - always visible */}
-        <div className="border-b border-[#D4DFE4]" />
+        <div className="border-b border-[#b08968]" />
 
         {/* Mega dropdown */}
         <div
@@ -100,7 +100,7 @@ export function Navbar() {
           style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
         >
           <div className="overflow-hidden">
-            <div className="grid grid-cols-[1fr_1fr_1fr_1.5fr] bg-[#f9f7f7]">
+            <div className="grid grid-cols-[1fr_1fr_1fr_1.5fr] bg-[#f5ecd7]">
               {/* Col 1 - Label */}
               <div className="flex justify-end py-10 pr-8">
                 <span className="font-body text-xs font-semibold uppercase tracking-[2px] text-[#55677E]">
@@ -109,7 +109,7 @@ export function Navbar() {
               </div>
 
               {/* Col 2 - Links */}
-              <div className="border-l border-[#D4DFE4] py-10 pl-10 pr-8">
+              <div className="border-l border-[#b08968] py-10 pl-10 pr-8">
                 <div className="flex flex-col gap-7">
                   {((openDropdown && dropdownData[openDropdown]?.items) || []).map((item) => (
                     <a
@@ -130,7 +130,7 @@ export function Navbar() {
               </div>
 
               {/* Col 3 - Empty spacer */}
-              <div className="border-l border-[#D4DFE4]" />
+              <div className="border-l border-[#b08968]" />
 
               {/* Col 4 - Featured card, dark bg extends to edge */}
               <div className="bg-[#101F33] py-10 pl-10 pr-10">
@@ -155,7 +155,7 @@ export function Navbar() {
             </div>
 
             {/* Bottom border */}
-            <div className="border-b border-[#D4DFE4]" />
+            <div className="border-b border-[#b08968]" />
           </div>
         </div>
       </nav>

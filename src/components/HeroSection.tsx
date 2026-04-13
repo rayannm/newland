@@ -14,7 +14,7 @@ const institutionLogos = [
 
 export function HeroSection() {
   return (
-    <section className="relative w-full border-b border-[#D4DFE4]">
+    <section className="relative w-full border-b border-[#b08968]">
       <style>{`
         @keyframes scroll-logos {
           0% { transform: translateX(0); }
@@ -111,7 +111,7 @@ export function HeroSection() {
       {/* Trusted by researchers - scrolling logos */}
       <div className="mx-auto max-w-[1560px] px-[5%]">
         <div className="flex items-center py-4">
-          <div className="shrink-0 border-r border-[#D4DFE4] pr-6">
+          <div className="shrink-0 border-r border-[#b08968] pr-6">
             <p className="text-sm text-[#55677E]">
               Trusted by researchers at<br /> leading institutions
             </p>

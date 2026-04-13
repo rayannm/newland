@@ -42,15 +42,15 @@ export function UseCasesSection() {
 
           {/* Heading */}
           <h2 className="mb-4 font-heading text-[48px] font-medium leading-[57.6px] text-white">
-            Supporting the full R&D pipeline
+            Supporting the full research lifecycle
           </h2>
 
           {/* Description - wider */}
           <p className="mb-12 font-body text-[18px] font-light leading-[27px] text-[#687E9B]">
-            From early research, through clinical development, to post-market -
-            life sciences enterprises choose Enjamb to execute, automate, and
-            accelerate vital scientific workflows and use cases that are key to
-            success.
+            From early discovery, through development and validation, to
+            submission and post-market, research and R&amp;D teams choose
+            Enjamb to execute, automate, and accelerate the vital scientific
+            workflows that drive outcomes.
           </p>
 
           {/* Cards Grid */}

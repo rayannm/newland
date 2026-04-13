@@ -105,7 +105,7 @@ export default function BlogPage() {
   return (
     <div className="pb-20">
       {/* Hero */}
-      <div className="border-b border-[#D4DFE4] bg-[#f9f7f7] py-16">
+      <div className="border-b border-[#b08968] bg-[#f5ecd7] py-16">
         <div className="mx-auto max-w-[1560px] px-[5%] text-center">
           <h1 className="font-heading text-[48px] font-medium leading-[1.1] tracking-[-0.02em] text-[#101F33] md:text-[56px]">
             News & Updates
@@ -126,7 +126,7 @@ export default function BlogPage() {
             </div>
             <Link
               href={`/blog/${featuredArticle.slug}`}
-              className="group grid grid-cols-1 overflow-hidden border border-[#D4DFE4] md:grid-cols-2"
+              className="group grid grid-cols-1 overflow-hidden border border-[#b08968] md:grid-cols-2"
             >
               <div className="aspect-[16/10] overflow-hidden md:aspect-auto">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -164,7 +164,7 @@ export default function BlogPage() {
               className={`px-4 py-1.5 text-[13px] font-medium transition-colors ${
                 activeCategory === cat
                   ? "bg-[#101F33] text-white"
-                  : "bg-[#f0f0f0] text-[#55677E] hover:bg-[#e0e0e0]"
+                  : "bg-[#ebe1ca] text-[#55677E] hover:bg-[#ddd0b0]"
               }`}
             >
               {cat}
@@ -173,7 +173,7 @@ export default function BlogPage() {
         </div>
 
         {/* Results count */}
-        <div className="mt-8 mb-6 flex items-center justify-between border-b border-[#D4DFE4] pb-4">
+        <div className="mt-8 mb-6 flex items-center justify-between border-b border-[#b08968] pb-4">
           <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#94a3b8]">
             All articles
           </div>
@@ -212,7 +212,7 @@ function ArticleCard({
   return (
     <Link
       href={`/blog/${article.slug}`}
-      className="group flex flex-col overflow-hidden border border-[#D4DFE4]"
+      className="group flex flex-col overflow-hidden border border-[#b08968]"
     >
       {article.image ? (
         <div className="aspect-[16/10] overflow-hidden">

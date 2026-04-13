@@ -175,7 +175,7 @@ const features: Feature[] = [
 
 export function FeaturesSection() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-background">
       <div className="mx-auto max-w-[1560px] px-[4.5%]">
         {/* Section header */}
         <div className="flex flex-col gap-6 pt-20">
@@ -197,10 +197,10 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex flex-col border border-[#D4DFE4] lg:min-h-[420px] lg:flex-row"
+              className="flex flex-col border border-[#b08968] lg:min-h-[420px] lg:flex-row"
             >
               {/* Text content */}
-              <div className="flex w-full flex-col justify-center lg:w-1/2 lg:border-r lg:border-[#D4DFE4]">
+              <div className="flex w-full flex-col justify-center lg:w-1/2 lg:border-r lg:border-[#b08968]">
                 <div className="flex flex-col gap-6 p-8 lg:px-[60px] lg:py-[60px]">
                   <p className="font-body text-[14px] font-medium uppercase leading-[1.5] tracking-[3.2px] text-[#55677E]">
                     {feature.eyebrow}
@@ -214,7 +214,7 @@ export function FeaturesSection() {
 
                   {/* Bullet points */}
                   {feature.bullets && feature.bullets.length > 0 && (
-                    <div className="mt-2 flex flex-col gap-4 border-t border-[#D4DFE4] pt-6">
+                    <div className="mt-2 flex flex-col gap-4 border-t border-[#b08968] pt-6">
                       {feature.bullets.map((bullet) => (
                         <div key={bullet.label} className="flex gap-3">
                           <div className="mt-1.5 h-1.5 w-1.5 shrink-0 bg-[#101F33]" />
