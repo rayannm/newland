@@ -29,7 +29,7 @@ const dropdownData: Record<string, { label: string; items: { title: string; subt
 const navLinks = [
   { label: "AI PLATFORM", hasDropdown: true, href: "#" },
   { label: "USE CASES", hasDropdown: true, href: "#" },
-  { label: "PRICING", hasDropdown: false, href: "#" },
+  { label: "PRICING", hasDropdown: false, href: "/pricing" },
   { label: "BLOG", hasDropdown: false, href: "/blog" },
   { label: "ABOUT", hasDropdown: false, href: "#" },
 ];

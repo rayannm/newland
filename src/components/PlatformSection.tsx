@@ -91,11 +91,11 @@ export function PlatformSection() {
         {/* Tab Content - bordered box with two equal columns */}
         <div
           key={activeTab}
-          className="flex flex-col border border-[#b08968] lg:min-h-[540px] lg:flex-row"
+          className="flex flex-col border border-[#b08968] lg:min-h-[500px] lg:flex-row"
         >
           {/* Left side - text content */}
-          <div className="flex w-full flex-col justify-center lg:w-1/2 lg:border-r lg:border-[#b08968]">
-            <div className="flex flex-col gap-6 p-8 lg:px-[60px] lg:py-[80px]">
+          <div className="flex w-full flex-col lg:w-1/2 lg:border-r lg:border-[#b08968]">
+            <div className="flex h-full flex-col gap-6 p-8 lg:px-[60px] lg:py-[60px]">
               {/* Content eyebrow */}
               <p className="font-body text-[16px] font-medium uppercase leading-[1.5] tracking-[3.2px] text-[#55677E]">
                 {currentTab.eyebrow}
@@ -111,10 +111,10 @@ export function PlatformSection() {
                 {currentTab.description}
               </p>
 
-              {/* Learn more button */}
+              {/* Learn more button — pinned to bottom */}
               <a
                 href="#"
-                className="inline-block w-fit rounded-[4px] bg-[#101F33] px-6 py-3 text-[14px] font-medium uppercase tracking-[1px] text-white transition-colors hover:bg-[#1a2f47]"
+                className="mt-auto inline-block w-fit rounded-[4px] bg-[#101F33] px-6 py-3 text-[14px] font-medium uppercase tracking-[1px] text-white transition-colors hover:bg-[#1a2f47]"
               >
                 {currentTab.link}
               </a>
