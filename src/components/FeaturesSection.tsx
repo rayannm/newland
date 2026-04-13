@@ -143,26 +143,30 @@ const features: Feature[] = [
     image: "/images/use-cases/novel-indications.avif",
   },
   {
-    eyebrow: "MANUSCRIPT DRAFTING",
-    title: "Manuscript Drafting & Formatting",
+    eyebrow: "MANUSCRIPT DRAFTING & FORMATTING",
+    title: "From First Draft to Final Submission, Autonomously",
     description:
-      "Go from outline to submission-ready manuscript with agents that draft, format, and cite in one continuous workflow. Full-featured Word and LaTeX editors built into the workspace with 1:1 desktop parity, so your team writes, reviews, and submits without switching tools.",
+      "Accelerate research writing with agents that draft, format, and polish documents to the exact specifications of any journal or R&D standard. Native editing across Word and LaTeX with 700+ pre-built journal templates and custom template generation for any output your team requires, delivered with the precision and rigor research demands.",
     bullets: [
       {
-        label: "Structured Drafting",
-        text: "Generate complete manuscript sections — introduction, methods, results, discussion — grounded in your data, figures, and literature review with inline citations.",
+        label: "Autonomous Journal Formatting",
+        text: "Submit to Nature, Cell, Science, NEJM, Elsevier, Springer, and 700+ pre-built templates out of the box. Upload any custom template and agents conform your manuscript to it flawlessly, automating hours of formatting work into seconds.",
       },
       {
-        label: "Journal-Specific Formatting",
-        text: "Auto-format to the submission guidelines of 10,000+ journals. Page layout, reference style, figure placement, and supplementary materials handled automatically.",
+        label: "Native Word & LaTeX Editing",
+        text: "Agents write directly inside your documents across Word and LaTeX, handling equations, tables, figures, and references with 1:1 desktop parity. One workspace from first draft to final submission.",
       },
       {
-        label: "Collaborative Editing",
-        text: "Real-time co-editing with tracked changes, inline comments, and version history. Your entire team works in the same document simultaneously.",
+        label: "Enterprise R&D Documentation",
+        text: "Draft and format experimental reports, technical briefs, regulatory submissions, patent applications, white papers, and IND-enabling documents. Agents generate custom templates for any internal standard and deliver beautifully structured output across every stage of R&D.",
       },
       {
-        label: "Submission-Ready Export",
-        text: "Export finalized manuscripts as Word, LaTeX, or PDF with all figures, tables, supplementary files, and cover letters packaged for direct journal submission.",
+        label: "Real-Time Co-Editing",
+        text: "Collaborate with your team and your agents in the same document simultaneously. Track changes, resolve comments, and iterate on drafts without version chaos.",
+      },
+      {
+        label: "Submission-Ready Compliance",
+        text: "Automated integrity audits against target journal or internal style guides. Identify missing sections, word count violations, citation inconsistencies, and formatting outliers before submission.",
       },
     ],
     image: "/images/use-cases/regulatory-filings.avif",
