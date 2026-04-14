@@ -79,7 +79,7 @@ export function PlatformSection() {
                 "block w-full cursor-pointer border-b-[3px] py-3 text-left font-body text-[14px] font-medium uppercase tracking-[2px] transition-colors",
                 "lg:inline-block lg:w-auto lg:shrink-0 lg:py-0 lg:pb-3",
                 activeTab === index
-                  ? "border-[#3C1FFA] text-[#101F33]"
+                  ? "border-[#82b4ea] text-[#101F33]"
                   : "border-[#b08968]/40 text-[#55677E] hover:text-[#101F33] lg:border-transparent"
               )}
               type="button"
@@ -114,7 +114,9 @@ export function PlatformSection() {
 
               {/* Learn more button — pinned to bottom */}
               <a
-                href="#"
+                href="https://cal.com/enjamb/15min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-auto inline-block w-fit rounded-[4px] bg-[#101F33] px-6 py-3 text-[14px] font-medium uppercase tracking-[1px] text-white transition-colors hover:bg-[#1a2f47]"
               >
                 {currentTab.link}

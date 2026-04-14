@@ -56,8 +56,11 @@ export function UseCasesSection() {
           {/* Cards Grid */}
           <div className="grid grid-cols-1 gap-4 pt-20 md:grid-cols-2 lg:grid-cols-3">
             {useCases.map((card) => (
-              <div
+              <a
                 key={card.title}
+                href="https://cal.com/enjamb/15min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex cursor-pointer flex-col px-1 py-4 transition-colors duration-200 hover:bg-[#0a1729] sm:px-2 md:p-4"
               >
                 {/* Card Image - wider, no radius */}
@@ -81,19 +84,14 @@ export function UseCasesSection() {
                   </p>
 
                   {/* Learn more - pushed to bottom */}
-                  <div className="mt-auto pt-10">
-                    <a
-                      href="#"
-                      className="inline-flex items-center gap-2 text-[15px] font-medium uppercase tracking-[1px] text-white transition-colors group-hover:text-[#FF5038]"
-                    >
-                      Learn more
-                      <span className="transition-transform group-hover:translate-x-1">
-                        &rarr;
-                      </span>
-                    </a>
+                  <div className="mt-auto flex items-center gap-2 pt-10 text-[15px] font-medium uppercase tracking-[1px] text-white transition-colors group-hover:text-[#FF5038]">
+                    Learn more
+                    <span className="transition-transform group-hover:translate-x-1">
+                      &rarr;
+                    </span>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

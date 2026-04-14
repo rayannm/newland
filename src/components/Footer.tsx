@@ -40,7 +40,7 @@ export function Footer() {
               at breakthrough levels of precision and speed.
             </p>
             <div className="mt-6">
-              <a href="#" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/enjamb/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <LinkedInIcon className="text-[#101F33]" />
               </a>
             </div>

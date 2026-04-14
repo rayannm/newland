@@ -103,6 +103,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "12 min read",
     authorName: "Rayan",
     authorRole: "Agentic research workspace",
+    bannerImage: "/images/blog-ire-vision.png",
     ctaTitle: "Be part of the movement",
     ctaText:
       "Whether you're running a university lab, leading an R&D department at a biotech, or scaling discovery at a pharma company — if you want to accelerate your research, unlock more funding, and publish faster, Enjamb is built for you. Try Enjamb at enjamb.org or request an enterprise onboarding for your team.",

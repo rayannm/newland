@@ -9,9 +9,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Enjamb: The Agentic AI Platform For Life Sciences",
+  title: "Enjamb: The Agentic Workspace for Research",
   description:
-    "Enjamb accelerates enterprises through discovery and development with scientific rigor - turning evidence into decision-ready intelligence, and best practice into repeatable execution at scale.",
+    "Enjamb accelerates every stage of research — literature review, methodology, data analysis, grants, and drafting — with scientific rigor and repeatable execution at scale.",
   icons: {
     icon: "/seo/favicon.ico",
     apple: "/seo/favicon-256.png",

@@ -17,9 +17,9 @@ export function ServicesSection() {
             <div className="mt-10 overflow-hidden rounded-[2px] border border-[#ece5d7] bg-white">
               <div className="relative grid grid-cols-1 divide-y divide-[#ece5d7] md:grid-cols-3 md:divide-x md:divide-y-0">
                 {[
-                  { value: "136+", label: "Databases" },
-                  { value: "216+", label: "Software Packages" },
-                  { value: "164+", label: "Tools" },
+                  { value: "136+", label: "Scientific & Bioinformatics Databases" },
+                  { value: "216+", label: "Python, R, and Analysis Packages" },
+                  { value: "164+", label: "Research & Lab Tools" },
                 ].map((stat) => (
                   <div
                     key={stat.label}

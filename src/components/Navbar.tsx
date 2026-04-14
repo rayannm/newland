@@ -29,7 +29,7 @@ const navLinks = [
   { label: "USE CASES", hasDropdown: true, href: "#" },
   { label: "PRICING", hasDropdown: false, href: "/pricing" },
   { label: "BLOG", hasDropdown: false, href: "/blog" },
-  { label: "ABOUT", hasDropdown: false, href: "#" },
+  { label: "ABOUT", hasDropdown: false, href: "/about" },
 ];
 
 export function Navbar() {
@@ -158,22 +158,23 @@ export function Navbar() {
               {/* Col 4 - Featured card, dark bg extends to edge */}
               <div className="bg-[#101F33] py-10 pl-10 pr-10">
                 <h3 className="font-heading text-[22px] font-medium leading-tight text-white">
-                  Mitigating clinical failures with AI
+                  The Integrated Research Environment
                 </h3>
                 <p className="mt-2 text-sm font-medium text-white/80">
-                  Overcoming the Toxicity Hurdle in Clinical Development
+                  A New Way Researchers Work
                 </p>
                 <p className="mt-4 max-w-[360px] text-[13px] leading-relaxed text-white/60">
-                  Scientists from big pharma are incorporating AI into their R&D
-                  processes to identify potential safety red flags earlier on in
-                  the development pipeline.
+                  Enjamb is pioneering the first collaborative workspace where
+                  agents and scientists execute the full research lifecycle
+                  together. Read the vision behind agentic research.
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/blog/the-integrated-research-environment"
+                  onClick={() => setOpenDropdown(null)}
                   className="mt-6 inline-block border border-white/40 px-5 py-2 text-[13px] font-medium uppercase tracking-[1px] text-white transition-colors hover:bg-white/10"
                 >
-                  Request access
-                </a>
+                  Read our Vision
+                </Link>
               </div>
             </div>
 
