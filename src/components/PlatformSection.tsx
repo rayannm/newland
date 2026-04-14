@@ -47,20 +47,20 @@ export function PlatformSection() {
   return (
     <section className="w-full bg-background">
       <div className="mx-auto max-w-[1620px] px-[4.5%]">
-        {/* Heading composition - NO extra inner padding, sits at container edge */}
-        <div className="flex flex-col gap-6 pt-20">
+        {/* Heading composition */}
+        <div className="flex flex-col gap-5 pt-16 md:gap-6 md:pt-20">
           {/* Eyebrow */}
-          <p className="font-body text-[16px] font-medium uppercase leading-[1.5] tracking-[3.2px] text-[#55677E]">
+          <p className="font-body text-[14px] font-medium uppercase leading-[1.5] tracking-[3.2px] text-[#55677E] md:text-[16px]">
             ENJAMB PLATFORM
           </p>
 
-          {/* H2 Heading - full width */}
-          <h2 className="font-heading text-[48px] font-medium leading-[57.6px] text-[#101F33]">
+          {/* H2 Heading */}
+          <h2 className="font-heading text-[32px] font-medium leading-[1.2] tracking-[-0.01em] text-[#101F33] md:text-[40px] md:leading-[1.2] lg:text-[48px] lg:leading-[57.6px]">
             An enterprise AI workspace for rigorous, end-to-end research
           </h2>
 
-          {/* Description - full width */}
-          <p className="font-body text-[18px] font-light leading-[27px] text-[#55677E]">
+          {/* Description */}
+          <p className="font-body text-[17px] font-light leading-[1.6] text-[#55677E] md:text-[18px] md:leading-[27px]">
             Enjamb aligns research teams around scientific discovery and
             execution at speed — from literature to methodology to final output.
             Empower your team with precision source retrieval, governed
@@ -69,17 +69,18 @@ export function PlatformSection() {
           </p>
         </div>
 
-        {/* Tabs */}
-        <div className="mt-8 flex gap-6 overflow-x-auto">
+        {/* Tabs — stacked on mobile, horizontal on desktop */}
+        <div className="mt-8 flex flex-col lg:flex-row lg:gap-6 lg:overflow-x-auto">
           {TABS.map((tab, index) => (
             <button
               key={index}
               onClick={() => setActiveTab(index)}
               className={cn(
-                "shrink-0 cursor-pointer px-0 pb-3 font-body text-[14px] font-medium uppercase tracking-[2px] transition-colors",
+                "block w-full cursor-pointer border-b-[3px] py-3 text-left font-body text-[14px] font-medium uppercase tracking-[2px] transition-colors",
+                "lg:inline-block lg:w-auto lg:shrink-0 lg:py-0 lg:pb-3",
                 activeTab === index
-                  ? "border-b-[3px] border-[#3C1FFA] text-[#101F33]"
-                  : "border-b-[3px] border-transparent text-[#55677E] hover:text-[#101F33]"
+                  ? "border-[#3C1FFA] text-[#101F33]"
+                  : "border-[#b08968]/40 text-[#55677E] hover:text-[#101F33] lg:border-transparent"
               )}
               type="button"
             >
@@ -94,8 +95,8 @@ export function PlatformSection() {
           className="flex flex-col border border-[#b08968] lg:min-h-[500px] lg:flex-row"
         >
           {/* Left side - text content */}
-          <div className="flex w-full flex-col lg:w-1/2 lg:border-r lg:border-[#b08968]">
-            <div className="flex h-full flex-col gap-6 p-8 lg:px-[60px] lg:py-[60px]">
+          <div className="flex w-full flex-col border-b border-[#b08968] lg:w-1/2 lg:border-b-0 lg:border-r lg:border-[#b08968]">
+            <div className="flex h-full flex-col gap-6 px-4 py-8 sm:px-6 lg:px-[60px] lg:py-[60px]">
               {/* Content eyebrow */}
               <p className="font-body text-[16px] font-medium uppercase leading-[1.5] tracking-[3.2px] text-[#55677E]">
                 {currentTab.eyebrow}

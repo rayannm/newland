@@ -36,11 +36,13 @@ export function CTASection() {
           {/* Right column (50%) */}
           <div className="flex flex-1 flex-col justify-center py-8">
             <p className="font-body text-[16px] font-light leading-relaxed text-[#55677E] md:text-[18px]">
-              Ready to transform the way your R&amp;D teams discover and
-              deliver? Take the first step - see Enjamb for yourself.
+              Stop losing weeks to fragmented workflows. Give your R&amp;D
+              team the autonomous advantage and see Enjamb for yourself.
             </p>
             <a
-              href="#"
+              href="https://cal.com/enjamb/15min"
+              target="_blank"
+              rel="noreferrer"
               className="mt-6 inline-block self-start rounded-[4px] bg-[#101F33] px-8 py-4 text-[18px] font-medium uppercase text-white transition-opacity hover:opacity-90 md:text-[20px]"
             >
               Request a demo

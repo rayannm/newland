@@ -2,11 +2,12 @@ export function TestimonialSection() {
   return (
     <section className="w-full bg-[#101F33]">
       <div className="mx-auto max-w-[1620px] px-[5%] py-20 text-center">
-        <h2 className="mx-auto max-w-[800px] font-heading text-[24px] font-medium italic leading-relaxed text-white">
-          &ldquo;Enjamb helps us move from scattered notes and partial drafts to
-          something coherent much faster. It feels less like wrestling with
-          document chaos and more like staying focused on the actual research
-          question.&rdquo;
+        <h2 className="mx-auto max-w-[800px] font-heading text-[22.4px] font-medium leading-[1.4] text-white">
+          &ldquo;We spent months on this one screening dataset just trying to
+          find a pattern. We didn&apos;t get much at first, but when I uploaded
+          the raw data into Enjamb, it autonomously plotted the stats and
+          pulled the matching papers. I just kept looking at the screen saying,
+          &lsquo;how did we miss this?&rsquo;&rdquo;
         </h2>
 
         <div className="mt-6">

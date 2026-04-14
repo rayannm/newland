@@ -2,26 +2,24 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { EnjambLogo, ChevronDownIcon, HamburgerIcon } from "@/components/icons";
+import { EnjambLogo, ChevronDownIcon, HamburgerIcon, CloseIcon } from "@/components/icons";
 
 const dropdownData: Record<string, { label: string; items: { title: string; subtitle: string }[] }> = {
   "AI PLATFORM": {
     label: "AI PLATFORM",
     items: [
-      { title: "Generative AI Copilot", subtitle: "The first AI copilot purpose-built for scientists" },
-      { title: "Knowledge Graph", subtitle: "High-precision biomedical knowledge graph" },
-      { title: "Enterprise Data Fabric", subtitle: "Get more from your data" },
-      { title: "Scientific Information Retrieval System (SIRS)", subtitle: "Information retrieval for life sciences AI" },
+      { title: "Agentic Orchestration Framework", subtitle: "Purpose-built agents for every stage of scientific research" },
+      { title: "Integrated Research Workspace", subtitle: "Word, LaTeX, Excel, PowerPoint, and scientific canvas, all agent-ready" },
+      { title: "Scientific Retrieval & Verified Sources", subtitle: "60+ research databases with zero tolerance for hallucination" },
+      { title: "Sandboxed Compute Environment", subtitle: "Python and R execution for analysis, bioinformatics, and visualization" },
     ],
   },
   "USE CASES": {
     label: "USE CASES",
     items: [
-      { title: "Target Identification & Prioritization", subtitle: "Rapidly identify and prioritize targets" },
-      { title: "Biomarker Discovery", subtitle: "Revolutionize biomarker research" },
-      { title: "Disease Pathophysiology", subtitle: "Decipher complex disease biology" },
-      { title: "Target Disease Association", subtitle: "Connect targets and diseases with confidence" },
-      { title: "Indication Expansion", subtitle: "Unlock new revenue growth from existing assets" },
+      { title: "Target Discovery", subtitle: "Collapse research timelines from months to minutes" },
+      { title: "Novel Mechanisms", subtitle: "Maximize the commercial value of your proprietary data" },
+      { title: "Regulatory & Grants", subtitle: "Bulletproof your INDs, grants, and journal filings" },
     ],
   },
 };
@@ -36,7 +34,14 @@ const navLinks = [
 
 export function Navbar() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const isOpen = !!(openDropdown && dropdownData[openDropdown]);
+
+  const closeMobile = () => {
+    setMobileOpen(false);
+    setMobileExpanded(null);
+  };
 
   return (
     <>
@@ -80,14 +85,32 @@ export function Navbar() {
             <a href="#" className="bg-black px-5 py-2 font-body text-sm font-medium text-white">
               Log in
             </a>
-            <a href="#" className="flex items-center gap-1.5 bg-neutral-500 px-5 py-2 font-body text-sm font-medium text-white transition-colors hover:bg-neutral-700">
+            <a
+              href="https://cal.com/enjamb/15min"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1.5 bg-neutral-500 px-5 py-2 font-body text-sm font-medium text-white transition-colors hover:bg-neutral-700"
+            >
               Request a demo <span>&rarr;</span>
             </a>
           </div>
 
           {/* Mobile hamburger */}
-          <button className="text-[#101F33] lg:hidden" aria-label="Open menu">
-            <HamburgerIcon className="h-6 w-6" />
+          <button
+            type="button"
+            className="text-[#101F33] lg:hidden"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
+            onClick={() => {
+              setMobileOpen((prev) => !prev);
+              setMobileExpanded(null);
+            }}
+          >
+            {mobileOpen ? (
+              <CloseIcon className="h-6 w-6" />
+            ) : (
+              <HamburgerIcon className="h-6 w-6" />
+            )}
           </button>
         </div>
 
@@ -160,13 +183,94 @@ export function Navbar() {
         </div>
       </nav>
 
-      {/* Click-outside overlay */}
+      {/* Click-outside overlay for desktop mega-dropdown */}
       {isOpen && (
         <div
           className="fixed inset-0 z-40"
           onClick={() => setOpenDropdown(null)}
           aria-hidden="true"
         />
+      )}
+
+      {/* Mobile menu panel */}
+      {mobileOpen && (
+        <div className="fixed inset-x-0 bottom-0 top-[70px] z-40 overflow-y-auto bg-[#101F33] text-white lg:hidden">
+          <div className="flex flex-col px-6 py-6">
+            {navLinks.map((link) => {
+              const dropdown = dropdownData[link.label];
+              const isExpanded = mobileExpanded === link.label;
+
+              if (link.hasDropdown && dropdown) {
+                return (
+                  <div
+                    key={link.label}
+                    className="border-b border-white/10"
+                  >
+                    <button
+                      type="button"
+                      className={`flex w-full items-center justify-between py-5 text-left font-body text-sm font-medium uppercase tracking-[2px] transition-colors ${
+                        isExpanded ? "text-[#7c6dff]" : "text-white"
+                      }`}
+                      onClick={() =>
+                        setMobileExpanded(isExpanded ? null : link.label)
+                      }
+                      aria-expanded={isExpanded}
+                    >
+                      {link.label}
+                      <ChevronDownIcon
+                        className={`h-4 w-4 transition-transform duration-200 ${
+                          isExpanded ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    {isExpanded && (
+                      <div className="flex flex-col gap-3 pb-5 pl-4">
+                        {dropdown.items.map((item) => (
+                          <a
+                            key={item.title}
+                            href="#"
+                            onClick={closeMobile}
+                            className="font-body text-[14px] text-white/70 transition-colors hover:text-white"
+                          >
+                            {item.title}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  onClick={closeMobile}
+                  className="block border-b border-white/10 py-5 font-body text-sm font-medium uppercase tracking-[2px] text-white transition-colors hover:text-[#7c6dff]"
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+
+            <a
+              href="#"
+              onClick={closeMobile}
+              className="block border-b border-white/10 py-5 font-body text-sm font-medium uppercase tracking-[2px] text-white transition-colors hover:text-[#7c6dff]"
+            >
+              Login
+            </a>
+            <a
+              href="https://cal.com/enjamb/15min"
+              target="_blank"
+              rel="noreferrer"
+              onClick={closeMobile}
+              className="block py-5 font-body text-sm font-medium uppercase tracking-[2px] text-white transition-colors hover:text-[#7c6dff]"
+            >
+              Request a demo
+            </a>
+          </div>
+        </div>
       )}
     </>
   );

@@ -1,4 +1,4 @@
-import Image, { type StaticImageData } from "next/image";
+import { type StaticImageData } from "next/image";
 
 import image2 from "../../image2.png";
 import image3 from "../../image3.png";
@@ -192,14 +192,14 @@ export function FeaturesSection() {
     <section className="w-full bg-background">
       <div className="mx-auto max-w-[1620px] px-[4.5%]">
         {/* Section header */}
-        <div className="flex flex-col gap-6 pt-20">
-          <p className="font-body text-[16px] font-medium uppercase leading-[1.5] tracking-[3.2px] text-[#55677E]">
+        <div className="flex flex-col gap-5 pt-16 md:gap-6 md:pt-20">
+          <p className="font-body text-[14px] font-medium uppercase leading-[1.5] tracking-[3.2px] text-[#55677E] md:text-[16px]">
             OUR FEATURES
           </p>
-          <h2 className="font-heading text-[48px] font-medium leading-[57.6px] text-[#101F33]">
+          <h2 className="font-heading text-[32px] font-medium leading-[1.2] tracking-[-0.01em] text-[#101F33] md:text-[40px] md:leading-[1.2] lg:text-[48px] lg:leading-[57.6px]">
             Built for every stage of research
           </h2>
-          <p className="max-w-[720px] font-body text-[18px] font-light leading-[27px] text-[#55677E]">
+          <p className="max-w-[720px] font-body text-[17px] font-light leading-[1.6] text-[#55677E] md:text-[18px] md:leading-[27px]">
             From first question through analysis to final output — R&amp;D teams
             choose Enjamb to execute, automate, and accelerate the scientific
             workflows that drive discovery that scales.
@@ -215,7 +215,7 @@ export function FeaturesSection() {
             >
               {/* Text content */}
               <div className="flex w-full flex-col justify-center lg:w-1/2 lg:border-r lg:border-[#b08968]">
-                <div className="flex flex-col gap-6 p-8 lg:px-[60px] lg:py-[60px]">
+                <div className="flex flex-col gap-6 px-4 py-8 sm:px-6 lg:px-[60px] lg:py-[60px]">
                   <p className="font-body text-[14px] font-medium uppercase leading-[1.5] tracking-[3.2px] text-[#55677E]">
                     {feature.eyebrow}
                   </p>
@@ -254,7 +254,9 @@ export function FeaturesSection() {
                       Log in
                     </a>
                     <a
-                      href="#"
+                      href="https://cal.com/enjamb/15min"
+                      target="_blank"
+                      rel="noreferrer"
                       className="flex items-center gap-1.5 bg-neutral-500 px-5 py-2.5 font-body text-[13px] font-medium uppercase tracking-[1px] text-white transition-colors hover:bg-neutral-700"
                     >
                       Request a demo <span>&rarr;</span>
@@ -272,15 +274,6 @@ export function FeaturesSection() {
                   backgroundSize: "cover",
                 }}
               >
-                <div className="relative my-8 aspect-[16/10] w-[90%] overflow-hidden rounded-[24px] border border-white/15 shadow-[0_28px_80px_rgba(16,31,51,0.28)] lg:my-0 lg:w-[86%]">
-                  <Image
-                    src={feature.image}
-                    alt={feature.title}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
-                </div>
               </div>
             </div>
           ))}

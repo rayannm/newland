@@ -9,9 +9,9 @@ const footerLinkGroups = [
     title: "Enjamb",
     links: [
       { label: "About", href: "#" },
-      { label: "Request a demo", href: "#" },
+      { label: "Request a demo", href: "https://cal.com/enjamb/15min" },
       { label: "Contact us", href: "#" },
-      { label: "Resources", href: "#" },
+      { label: "Blog", href: "/blog" },
       { label: "Careers", href: "#" },
     ],
   },
@@ -28,9 +28,9 @@ const footerLinkGroups = [
 export function Footer() {
   return (
     <footer className="w-full bg-[#D4DFE4]">
-      <div className="mx-auto max-w-[1620px] px-[5%] py-16">
+      <div className="mx-auto max-w-[1620px] px-6 py-12 sm:px-8 lg:px-[5%] lg:py-16">
         {/* Footer top */}
-        <div className="grid grid-cols-1 gap-[5%] lg:grid-cols-[360px_288px_288px_288px]">
+        <div className="grid grid-cols-1 gap-x-[5%] gap-y-10 lg:grid-cols-[360px_288px_288px_288px]">
           {/* Col 1: Logo + description + social */}
           <div>
             <EnjambLogo className="text-[#101F33]" />
@@ -57,6 +57,9 @@ export function Footer() {
                   <li key={link.label}>
                     <a
                       href={link.href}
+                      {...(link.href.startsWith("http")
+                        ? { target: "_blank", rel: "noreferrer" }
+                        : {})}
                       className="font-body text-sm leading-[2] text-[#55677E] hover:underline"
                     >
                       {link.label}

@@ -17,6 +17,7 @@ export type BlogPost = {
   featured?: boolean;
   authorName: string;
   authorRole: string;
+  bannerImage?: string;
   sections?: BlogSection[];
   ctaTitle?: string;
   ctaText?: string;
@@ -27,525 +28,217 @@ export const blogPosts: BlogPost[] = [
     slug: "announcing-backing-from-y-combinator",
     title: "Announcing Enjamb's $650K pre-seed",
     excerpt:
-      "What this raise unlocks for collaborative scientific writing, AI-assisted drafting, and publication-ready workflows.",
+      "Backed by Y Combinator and Founders Inc. to build the first agentic research workspace for R&D teams.",
     metaDescription:
-      "Enjamb announces its $650K pre-seed and outlines what the milestone unlocks for collaborative scientific writing.",
+      "Enjamb announces its $650K pre-seed from Y Combinator and Founders Inc. to build the first agentic research workspace.",
     category: "Company news",
-    date: "2026-03-11",
-    dateLabel: "March 11, 2026",
-    readTime: "3 min read",
+    date: "2026-04-14",
+    dateLabel: "April 14, 2026",
+    readTime: "5 min read",
     featured: true,
-    authorName: "Enjamb team",
-    authorRole: "Product, collaboration, and publishing workflows",
-    ctaTitle: "See what we're building",
+    authorName: "Rayan",
+    authorRole: "Agentic research workspace",
+    bannerImage: "/images/blog-yc-announcement.png",
+    ctaTitle: "Be part of the movement",
     ctaText:
-      "Explore the Enjamb product, follow future updates on the blog, or book a demo if your team is rethinking how manuscript collaboration should work.",
+      "Whether you're running a university lab, leading an R&D department at a biotech, or scaling discovery at a pharma company — if you want to accelerate your research, unlock more funding, and publish faster, Enjamb is built for you. Try Enjamb at enjamb.org or request an enterprise onboarding for your team.",
     sections: [
       {
         id: "introduction",
         title: "Introduction",
         paragraphs: [
-          "Scientific teams still spend too much time moving drafts between disconnected tools, cleaning up formatting, and chasing version control issues that have nothing to do with the science itself. Enjamb exists to change that.",
-          "This pre-seed gives us more room to invest in the product areas our users care about most: faster manuscript collaboration, more useful AI assistance inside the writing flow, and smoother submission-ready output when it is time to publish.",
+          "Today, we're announcing our $650K pre-seed funding round, backed by Y Combinator and Founders Inc.",
+          "Enjamb is the first agentic research workspace for R&D teams. We build autonomous AI agents that execute the full research lifecycle — literature review, methodology design, data analysis, grant discovery, and manuscript drafting — inside a single collaborative platform built for how research actually happens.",
+          "We're grateful to be trusted by researchers at 11+ institutions who are already using Enjamb to accelerate their publication and funding cycles.",
         ],
       },
       {
-        id: "what-this-unlocks",
-        title: "What this unlocks",
+        id: "research-wasnt-meant-to-look-like-this",
+        title: "Research Wasn't Meant to Look Like This",
         paragraphs: [
-          "We are focused on building the writing workspace research teams actually need, not another generic document editor. That means tighter support for the messy middle of manuscript work: drafting, coauthor feedback, revisions, and preparing final files for journals.",
-        ],
-        bullets: [
-          "Better collaboration flows for multi-author manuscript drafting and review.",
-          "More useful AI workflows that help with writing without replacing authorship.",
-          "Stronger publication-ready tooling for the final submission process.",
+          "Research touches nearly every part of how a lab or R&D team operates, from submitting grants and running experiments to publishing findings and filing regulatory documents. But instead of driving discovery, the manual work behind research has become the bottleneck.",
+          "Every day, millions of scientists, graduate students, and R&D engineers — people who could be curing diseases, designing new therapeutics, and pushing the frontier of human knowledge — are stuck juggling Word, Overleaf, Zotero, GraphPad, Python notebooks, Excel spreadsheets, and ChatGPT. They copy and paste between half a dozen tools. They manually reformat manuscripts for each journal. They burn weeks writing literature reviews that sit unread. They spend months on grant applications with no clear edge.",
+          "This costs research billions in lost time, slows the pace of discovery, and buries breakthrough ideas under administrative overhead.",
         ],
       },
       {
-        id: "why-now",
-        title: "Why now",
+        id: "legacy-tools-cant-keep-up",
+        title: "Legacy Tools Can't Keep Up With How Research Works Today",
         paragraphs: [
-          "The need is clear. Research teams are producing more complex, collaborative work, but the tools around writing and submission still create avoidable drag. We believe there is an opportunity to make the manuscript process faster, calmer, and more reliable from first draft to final package.",
-          "We are grateful to everyone who has supported us early, including the researchers, labs, design partners, and backers who helped shape the direction of Enjamb.",
+          "Scientific workflows are highly specialized. Generic tools aren't. That mismatch is why most of the research software stack is held together with duct tape.",
+          "Word processors don't understand citations. Reference managers don't understand documents. Chat tools don't understand your data. Statistical software doesn't understand the literature. No single platform knows your research goals, past work, or team context well enough to actually help you execute.",
+          "So researchers fall back to fragmented workflows spread across email, Slack, shared drives, and a dozen disconnected applications — managing the same tedious tasks over and over again, manually.",
         ],
       },
       {
-        id: "what-comes-next",
-        title: "What comes next",
+        id: "enjamb-is-the-agentic-workspace",
+        title: "Enjamb Is the Agentic Workspace for Research",
         paragraphs: [
-          "Over the coming months we will keep improving the core manuscript workspace, deepen the assistant experience around drafting and revision, and keep polishing the parts of the workflow that teams usually have to stitch together themselves.",
-          "This milestone is just the start. We are excited to keep building with the researchers and teams who are pushing the product forward with us.",
+          "Software alone isn't enough to solve this. Chat wrappers that summarize papers and hallucinate citations aren't enough either.",
+          "Enjamb is an AI-native research workspace that eliminates the manual work across the entire research lifecycle. Our agents don't just retrieve information — they execute. They run literature reviews across 250 million+ papers and ingest full-text PDFs into your workspace. They design validated methodologies and generate procurement-ready material lists with vendor catalog numbers and pricing. They analyze raw data in a sandboxed Python and R environment, run rigorous statistical tests, and deliver publication-quality figures. They draft manuscripts across 700+ journal templates with perfect formatting. They find grants matched to your research profile and write submission-ready proposals.",
+          "Every output is grounded in verified scientific sources. Every citation maps to a full-text paper in your workspace. Every claim is traceable. Every step is visible to your team in real time.",
+          "You don't need to change how your lab works. Enjamb adapts to your team's protocols, documents, and institutional knowledge — and automates the hardest parts behind the scenes.",
+        ],
+      },
+      {
+        id: "scaling-agentic-research",
+        title: "Scaling Agentic Research to Every Lab",
+        paragraphs: [
+          "Since starting Enjamb, we've been adopted by labs and R&D teams across 11+ leading institutions. Our users are running full literature reviews in hours instead of weeks, drafting grant proposals in days instead of months, and analyzing datasets that used to sit unexplored for years.",
+          "With our $650K pre-seed backed by Y Combinator and Founders Inc., we're deepening our agent capabilities, growing our team, and building toward a future where every research team operates at the speed their science demands.",
         ],
       },
     ],
   },
   {
-    slug: "scientists-feedback-loops",
-    title: "What scientists actually want from manuscript feedback loops",
+    slug: "the-integrated-research-environment",
+    title: "The Integrated Research Environment: Our vision for AI-native science",
     excerpt:
-      "A closer look at review cycles, annotation fatigue, and how teams keep momentum while revising.",
+      "Why research needs an IDE of its own — and how agentic workspaces will collapse the friction between a question and a discovery.",
     metaDescription:
-      "A closer look at manuscript feedback loops, review cycles, and how research teams maintain momentum while revising.",
-    category: "User research",
-    date: "2026-03-08",
-    dateLabel: "March 8, 2026",
-    readTime: "4 min read",
-    authorName: "Enjamb team",
-    authorRole: "User research and workflow design",
-    ctaTitle: "Build calmer review cycles",
+      "Enjamb's vision for the Integrated Research Environment — an AI-native workspace where researchers and agents collaborate across the full lifecycle of science.",
+    category: "Company news",
+    date: "2026-04-14",
+    dateLabel: "April 14, 2026",
+    readTime: "12 min read",
+    authorName: "Rayan",
+    authorRole: "Agentic research workspace",
+    ctaTitle: "Be part of the movement",
     ctaText:
-      "If your team is buried in comments, version confusion, and revision churn, Enjamb is built to make manuscript feedback loops easier to manage.",
+      "Whether you're running a university lab, leading an R&D department at a biotech, or scaling discovery at a pharma company — if you want to accelerate your research, unlock more funding, and publish faster, Enjamb is built for you. Try Enjamb at enjamb.org or request an enterprise onboarding for your team.",
     sections: [
       {
-        id: "why-feedback-loops-break",
-        title: "Why feedback loops break down",
+        id: "the-question-vs-the-grind",
+        title: "The question vs. the grind",
         paragraphs: [
-          "Most teams do not struggle because they lack comments. They struggle because feedback arrives in too many places, at different levels of specificity, and without a shared system for deciding what happens next.",
-          "A coauthor flags a paragraph in one document, another sends a list by email, and a third leaves a note about figures in a meeting. The scientific work is still moving forward, but the coordination layer becomes fragile and expensive.",
+          "Researchers enter their fields to ask the questions that matter — to understand how diseases progress, how materials behave under stress, how markets respond to policy, how proteins fold, how cells communicate, how the universe began.",
+          "But that's not how most researchers spend their days.",
+          "Picture a typical morning in a research lab. You open your laptop, pull up yesterday's experimental results, and try to make sense of the data in an Excel template that was built by a former grad student who graduated three years ago. You export a CSV, load it into Prism, and realize the statistical test you need isn't supported. You switch to a Python notebook, spend twenty minutes debugging a package import, and finally run the analysis. You paste the results into a Word document. You open Zotero to find a citation. You switch back to PubMed to check a methods section from a paper you half-remember. You jump into Overleaf because your co-author is drafting the introduction in LaTeX. You ping your PI on Slack about the figure caption. You open ChatGPT to help summarize a section, then spend ten minutes verifying its citations are real.",
+          "By noon, you've bounced between eight tools, made three context switches per hour, and burned through your cognitive budget before the real thinking has even started.",
+          "This is the reality of scientific research in 2026.",
         ],
       },
       {
-        id: "what-scientists-actually-want",
-        title: "What scientists actually want",
+        id: "the-software-industry-solved-this",
+        title: "The software industry solved this problem decades ago",
         paragraphs: [
-          "When researchers talk about better feedback loops, they are usually asking for the same three things: a single place where comments live, clear ownership over follow-up, and confidence that a resolved point will stay resolved.",
-          "They do not want an elaborate project-management ritual layered on top of writing. They want the manuscript itself to remain the center of gravity while decisions, revisions, and rationale stay connected to the text.",
+          "Other fields have faced the same fragmentation. Early software development was slow and painful: code was written in one editor, compiled in another tool, executed somewhere else, and debugged only after long feedback cycles. Engineers lost hours every day just moving information between systems that weren't designed to talk to each other.",
+          "The breakthrough came with the Integrated Development Environment. By unifying writing, execution, debugging, version control, and testing into a single workspace, the IDE collapsed feedback loops and redefined what engineers could accomplish in a day. Suddenly, the limit on productivity wasn't tool-switching — it was the engineer's ideas.",
+          "Research has never had an equivalent. The work is historically fragmented across a long tail of disconnected tools built in isolation over decades: word processors, reference managers, statistical software, LaTeX compilers, cloud notebooks, citation databases, figure editors, protocol repositories, funding databases, vendor catalogs, regulatory portals. Each tool is excellent at one job. None of them know about each other. And every researcher spends a meaningful percentage of their career writing informal glue code in their own heads to make these tools cooperate.",
+          "Until now, there was no realistic path to unify them. Too many formats, too many vendors, too many edge cases, too many domains.",
+        ],
+      },
+      {
+        id: "why-this-is-changing-now",
+        title: "Why this is changing now",
+        paragraphs: [
+          "That constraint is starting to dissolve. Large language models are no longer limited to narrow tasks or brittle pipelines. They can synthesize information across millions of documents, reason through complex problems, and learn new domains on the fly.",
+          "When you build agents on top of these models, AI stops being a chatbot and starts being a collaborator. Agents can query scientific databases, read full-text PDFs, execute code in sandboxed environments, manipulate documents, orchestrate multi-step workflows, and even propose next steps. A researcher describes an intent. The agent figures out how to carry it out.",
+          "For research, this is a step change. The agent becomes the integration layer that has been missing for decades — the connective tissue that can move across tools, databases, and file formats, and handle the tedious work in between. That opens the door to an entirely new workflow: researchers stay focused on the science, asking questions and interpreting results, while the agent handles the friction.",
+          "We built Enjamb to make this real.",
+        ],
+      },
+      {
+        id: "what-is-an-ire",
+        title: "What is an Integrated Research Environment?",
+        paragraphs: [
+          "An Integrated Research Environment (IRE) is a shared workspace where researchers and AI agents collaborate across the full lifecycle of scientific work. The researcher brings expertise, intuition, judgment, and taste. The agent brings the ability to search, synthesize, analyze, execute, format, cite, and keep track of everything that happens.",
+          "In one place, you can:",
         ],
         bullets: [
-          "Comments attached directly to the relevant draft context.",
-          "A shared view of what is open, resolved, and blocked.",
-          "Lightweight accountability without turning the manuscript into a task board.",
+          "Review the literature across 250 million+ papers and ingest full-text PDFs directly into your workspace.",
+          "Design validated experimental methodologies from published protocols and your lab's own prior work.",
+          "Generate procurement-ready materials lists with vendor catalog numbers and pricing.",
+          "Analyze raw experimental data in a sandboxed Python and R environment.",
+          "Run rigorous statistical tests and generate publication-ready figures.",
+          "Discover grants matched to your research profile and draft submission-ready proposals.",
+          "Write and format manuscripts across 700+ journal templates in Word or LaTeX.",
+          "Collaborate with your team and your agents in real time, in the same documents.",
         ],
       },
       {
-        id: "where-tools-create-friction",
-        title: "Where tools create friction",
+        id: "three-parts-that-make-it-work",
+        title: "Three parts that make it work",
         paragraphs: [
-          "The biggest failure mode is context switching. Every time a team has to move from manuscript to email thread to spreadsheet tracker and back again, it becomes harder to keep the revision history coherent.",
-          "That fragmentation also makes it harder for AI tools to be helpful. If the manuscript lives in one place and the feedback logic lives somewhere else, assistants can summarize pieces of the process but cannot actually support the full revision workflow.",
+          "The agent remembers what you've tried, understands your research goals, and helps you reason toward what to do next.",
+          "The workspace. A purpose-built environment that unifies every research tool — full-featured Word, LaTeX, Excel, and PowerPoint editors, an integrated scientific canvas, a Python and R compute environment, a reference manager, a task manager, and file storage — all built around how researchers actually think and work.",
+          "The agents. Domain-specialized AI agents that understand scientific context, reason alongside you, and execute autonomously across every stage of research. Not a single chatbot, but an orchestrated system of agents that collaborate, cross-validate, and handoff seamlessly.",
+          "The integrations. Direct connections to the databases and sources researchers trust — Semantic Scholar, PubMed, arXiv, bioRxiv, OpenAlex, grants.gov, protocols.io, manufacturer catalogs, and 60+ specialized scientific databases. Every claim traceable, every citation verifiable, every output grounded in real science.",
+          "This is how research should feel: the researcher asks, the agent executes, and the environment holds everything together.",
         ],
       },
       {
-        id: "what-good-looks-like",
-        title: "What good looks like",
+        id: "principles-for-building-an-ire",
+        title: "Principles for building an IRE",
         paragraphs: [
-          "The best review loop feels boring in the best possible way. A comment arrives, the right person sees it, the team makes a decision, and the draft moves forward without drama.",
-          "That is the bar we care about. Faster reviews, fewer duplicate conversations, and less confusion about what changed and why.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "shared-draft-questions",
-    title: "Five questions every team should ask before starting a shared draft",
-    excerpt:
-      "Short alignment rituals can reduce confusion before the first version even leaves the lab.",
-    metaDescription:
-      "Five alignment questions that reduce confusion before a shared manuscript draft begins.",
-    category: "Collaboration",
-    date: "2026-03-05",
-    dateLabel: "March 5, 2026",
-    readTime: "4 min read",
-    authorName: "Enjamb team",
-    authorRole: "Collaboration systems",
-    sections: [
-      {
-        id: "why-starting-well-matters",
-        title: "Why starting well matters",
-        paragraphs: [
-          "The earliest decisions in a shared draft shape everything that follows. If a team starts writing before it agrees on audience, ownership, structure, and source of truth, confusion compounds quickly.",
-          "A half hour of alignment at the beginning can save days of cleanup later. Most collaboration pain shows up much later than the decision that caused it.",
+          "Native to researchers. Built around how science actually happens, from first hypothesis to final submission. The interface has to be rethought from scratch to fit how researchers spend their days, not retrofitted from generic productivity tools.",
+          "Rigorous. Scientific rigor is non-negotiable. Every output is reviewable, reproducible, and grounded in verified evidence. The agent flags uncertainty, challenges its own outputs, and never fabricates citations.",
+          "Collaborative. A true partner, not a silent black box. The agent brainstorms, clarifies ambiguity, proposes plans before acting, and lets you intervene at any step. Every tool call, every source, every reasoning step is visible in real time.",
+          "Persistent. Every project, dataset, document, and prior result stays in your workspace. Context accumulates across sessions. Institutional knowledge compounds over time. You never re-explain your research goals or re-upload your data.",
+          "Collaborative across teams. Research is rarely a solo endeavor. Real-time co-editing, shared knowledge bases, persistent team context, and role-based access mean your lab, department, or R&D group operates as a unified intelligence — not a collection of silos.",
+          "Scalable. Complexity is abstracted. Parallel sub-agents execute research workflows simultaneously. Compute, models, and specialized pipelines appear as simple actions, without requiring you to manage infrastructure.",
         ],
       },
       {
-        id: "question-one",
-        title: "1. What is this draft trying to do?",
+        id: "the-ai-native-researcher",
+        title: "The AI-native researcher",
         paragraphs: [
-          "Every document has a job. Some manuscripts are trying to persuade, others are trying to document, and others are trying to frame an early result for internal decision-making.",
-          "If the team is not aligned on the job of the document, it will argue about tone, scope, and detail in circles.",
+          "The IRE changes how researchers work.",
+          "You wake up thinking about questions, not about which eight tools you need to open. You describe what you want to investigate, and the agent handles the mechanics. You review, steer, decide, and interpret. What remains is the core of research: reasoning, intuition, creative leaps, and the judgment that only comes from years of expertise.",
+          "The IRE shifts the focus back to science itself.",
         ],
       },
       {
-        id: "question-two",
-        title: "2. Who owns which parts?",
+        id: "from-weeks-to-hours",
+        title: "From weeks to hours",
         paragraphs: [
-          "Shared authorship does not mean diffuse ownership. Teams move faster when each section has a clear primary owner, even if multiple people contribute to revisions.",
-          "Ownership also helps collaborators know where to leave comments versus where to make direct edits.",
+          "An AI-native researcher operates on shorter cycles. A literature review that used to take six weeks now takes an afternoon. A grant proposal that consumed entire months can be drafted in days. A statistical analysis across dozens of experimental CSVs runs in minutes instead of sitting unexplored for years.",
+          "The limiting factor shifts from logistics to thinking.",
         ],
       },
       {
-        id: "question-three-to-five",
-        title: "3. Which tools are in play and what counts as final?",
+        id: "expertise-without-boundaries",
+        title: "Expertise without boundaries",
         paragraphs: [
-          "Before the first draft starts, decide where references live, where figures are maintained, where statistical outputs come from, and which version of the manuscript counts as current.",
-          "The final three questions are simple: where do comments live, how do we resolve disagreements, and what is the submission path? If those answers are clear, collaboration gets much calmer.",
-        ],
-        bullets: [
-          "Where does the team leave review comments?",
-          "Who makes the final call on disputed edits?",
-          "What file or workspace is the canonical version at every stage?",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "workspace-automation",
-    title: "What a better manuscript workspace should automate for you",
-    excerpt:
-      "From file organization to reviewer responses, the best tools remove administrative drag.",
-    metaDescription:
-      "From file organization to reviewer responses, the best manuscript tools should remove administrative drag.",
-    category: "Product updates",
-    date: "2026-03-03",
-    dateLabel: "March 3, 2026",
-    readTime: "5 min read",
-    authorName: "Enjamb team",
-    authorRole: "Product systems",
-    sections: [
-      {
-        id: "automation-should-remove-drag",
-        title: "Automation should remove drag",
-        paragraphs: [
-          "Good automation handles the repetitive, brittle, and administrative parts of manuscript work. It should not get in the way of scientific judgment, authorship, or interpretation.",
-          "The point is not to automate for the sake of novelty. The point is to remove the tasks that consume time without adding insight.",
+          "No individual or team is an expert in every domain their work touches. A molecular biologist isn't necessarily a computational biologist. A physicist isn't always a statistician. A chemist may not track the latest advances in machine learning.",
+          "An AI-native workflow bridges these gaps. Domain expertise becomes part of the environment itself, not a bottleneck that requires months of collaboration, funding, or external consultants. You can follow your curiosity farther, without stopping at the edge of what you personally know.",
         ],
       },
       {
-        id: "best-automation-targets",
-        title: "The best automation targets",
+        id: "unlocking-hidden-discoveries",
+        title: "Unlocking hidden discoveries",
         paragraphs: [
-          "There are a few areas where automation consistently helps: reference formatting, document structure checks, reviewer response organization, file naming, figure export requirements, and template conformance.",
-          "These are painful jobs because they are detail-heavy, high-friction, and easy to get wrong under deadline pressure.",
-        ],
-        bullets: [
-          "Formatting references and citations consistently.",
-          "Checking journal compliance before submission.",
-          "Tracking revision requests across authors and reviewers.",
-          "Turning source data and notes into draft-ready material faster.",
+          "Many of science's most important discoveries sit at intersections: between disciplines, inside under-explored datasets, and in the connections between new tools and old questions. CRISPR came from microbiologists studying bacterial immune systems. Metformin's surprising therapeutic benefits surfaced from decades of patient records. Penicillin came from a contaminated petri dish.",
+          "The problem isn't that these discoveries don't exist. It's that cross-disciplinary exploration is expensive. It takes time, collaborators, constant learning, and the luxury of following tangents that might not pan out. Most researchers never go looking.",
+          "An IRE lowers the activation energy. It makes it practical to connect decade-old data to models published last week, to trace ideas across fields until something clicks, to re-analyze old experiments with new techniques. The discoveries were always there. Now they're easier to reach.",
         ],
       },
       {
-        id: "what-not-to-automate-blindly",
-        title: "What not to automate blindly",
+        id: "making-tacit-knowledge-explicit",
+        title: "Making tacit knowledge explicit",
         paragraphs: [
-          "Claims, interpretations, and final scientific framing need human review. Automation can prepare options and speed up revision, but researchers still need to decide what is defensible and what is worth saying.",
-          "This matters most when teams are tired. The closer you get to submission, the more tempting it is to accept machine-generated structure without fully inspecting it.",
+          "Science has a provenance problem. Papers show polished conclusions, not the dozens of failed attempts, dead ends, and half-finished ideas that led to them. Labs rely on tacit knowledge — which reagent actually works, why a supposedly 30-minute step really needs 45, which protocol breaks under specific conditions, why one graduate student's results never reproduced. That knowledge disappears when people graduate, switch labs, or simply forget.",
+          "In an IRE, that trail is captured by default. Every query, every analysis, every decision, and every rationale is preserved as you work. A new team member can see how the thinking evolved. A collaborator across the country can understand exactly why you made a specific call. Institutional knowledge becomes explicit, durable, and transferable.",
         ],
       },
       {
-        id: "toward-a-better-workspace",
-        title: "Toward a better workspace",
+        id: "when-an-organization-becomes-ai-native",
+        title: "When an organization becomes AI-native",
         paragraphs: [
-          "A better manuscript workspace does not feel like an AI toy sitting beside a document. It feels like the environment itself understands the jobs surrounding the draft and helps carry them with less overhead.",
-          "That is the kind of automation we care about: visible, useful, and grounded in the real workflow.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "ai-writing-process",
-    title: "Where AI can help without taking over the writing process",
-    excerpt:
-      "A practical framework for using assistants to speed up drafting while preserving authorship.",
-    metaDescription:
-      "A practical framework for using AI assistants to speed up drafting while preserving authorship.",
-    category: "AI workflows",
-    date: "2026-02-28",
-    dateLabel: "February 28, 2026",
-    readTime: "5 min read",
-    authorName: "Enjamb team",
-    authorRole: "Assistant design",
-    sections: [
-      {
-        id: "where-ai-is-actually-helpful",
-        title: "Where AI is actually helpful",
-        paragraphs: [
-          "AI is most helpful when it speeds up the parts of writing that are expensive but not identity-defining. Summarizing reviewer themes, restructuring a section, generating alternatives, and helping maintain consistency are all fair game.",
-          "It becomes less helpful when teams expect it to replace the scientific judgment that gives a manuscript its value.",
+          "Now imagine every researcher at a university, every scientist at a biotech, every R&D engineer at a pharma company — all working inside the same IRE.",
+          "A department head gains a living map of what the organization knows. When an experiment fails, you can trace backward through prior work, cell assays, target selection, and literature context to identify exactly where assumptions broke. Documentation happens as a byproduct of doing the work. The boundary between individual contributor and institutional knowledge fades, because both operate in the same shared context.",
+          "Over time, the IRE becomes the organization's scientific memory and execution layer.",
         ],
       },
       {
-        id: "preserving-authorship",
-        title: "Preserving authorship",
+        id: "the-abundance-of-discoveries",
+        title: "The abundance of discoveries",
         paragraphs: [
-          "Researchers are right to care about authorship. The solution is not to avoid AI entirely. It is to use it in ways that keep the human author clearly in charge of argument, evidence, and final expression.",
-          "That usually means treating assistants as accelerators, not originators. They can help you move, but they should not decide what the work means.",
-        ],
-      },
-      {
-        id: "practical-guidelines",
-        title: "Practical guidelines",
-        paragraphs: [
-          "Teams that use AI well tend to establish simple internal rules. They decide which tasks are safe to delegate, which outputs require review, and which decisions remain fully human.",
-        ],
-        bullets: [
-          "Use AI to prepare structure, not final claims.",
-          "Review every generated output against sources and intent.",
-          "Keep a clear record of where AI helped and where authors made the final decision.",
-        ],
-      },
-      {
-        id: "the-right-standard",
-        title: "The right standard",
-        paragraphs: [
-          "The standard is not whether AI touched the draft. The standard is whether the final document is accurate, accountable, and clearly owned by the authors.",
-          "If a team can use AI and still meet that bar, then the technology is serving the work rather than distorting it.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "submission-friction",
-    title: "Reducing submission friction across journals, coauthors, and revisions",
-    excerpt:
-      "The most painful steps in the publication journey usually happen after the science is done.",
-    metaDescription:
-      "Why submission friction across journals, coauthors, and revisions slows research teams down.",
-    category: "Publishing",
-    date: "2026-02-24",
-    dateLabel: "February 24, 2026",
-    readTime: "4 min read",
-    authorName: "Enjamb team",
-    authorRole: "Publishing workflows",
-    sections: [
-      {
-        id: "where-submission-gets-painful",
-        title: "Where submission gets painful",
-        paragraphs: [
-          "For many teams, the worst part of manuscript work starts after the science is largely done. Submission introduces a new class of tasks: formatting requirements, supplementary files, metadata fields, reviewer responses, and packaging details that vary by destination.",
-          "Those tasks are not intellectually central, but they are operationally expensive. They slow down teams at the exact moment they want momentum.",
-        ],
-      },
-      {
-        id: "friction-comes-from-translation",
-        title: "Friction comes from translation",
-        paragraphs: [
-          "Most submission work is translation between systems. The manuscript needs to become a journal-compliant package. The references need to become the right style. The figures need to become the right format. The authorship details need to be copied into forms accurately.",
-          "Every translation step introduces risk. Something gets missed, reformatted incorrectly, or separated from the source context that made it understandable.",
-        ],
-      },
-      {
-        id: "what-teams-need",
-        title: "What teams need",
-        paragraphs: [
-          "Teams need a submission layer that is closer to the draft itself. Instead of treating submission as a last-mile scramble, the workflow should surface formatting issues early and keep required metadata connected to the manuscript from the start.",
-        ],
-        bullets: [
-          "Clear checks for missing required sections.",
-          "Consistent citation and reference handling.",
-          "Figure and supplementary file readiness before the deadline week.",
-          "A single place to prepare the final package.",
-        ],
-      },
-      {
-        id: "submission-should-not-feel-chaotic",
-        title: "Submission should not feel chaotic",
-        paragraphs: [
-          "The final handoff should feel procedural, not panicked. If it feels chaotic, the tooling is failing the team.",
-          "That is why we think manuscript systems need to care about the submission workflow as much as they care about drafting.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "modern-manuscript-collaboration",
-    title: "Why modern manuscript collaboration still breaks down",
-    excerpt:
-      "A closer look at the handoff friction between drafting, feedback, versioning, and final submission.",
-    metaDescription:
-      "A closer look at why modern manuscript collaboration still breaks down between drafting and submission.",
-    category: "Collaboration",
-    date: "2026-02-20",
-    dateLabel: "February 20, 2026",
-    readTime: "4 min read",
-    authorName: "Enjamb team",
-    authorRole: "Collaboration systems",
-    sections: [
-      {
-        id: "why-collaboration-still-breaks",
-        title: "Why collaboration still breaks down",
-        paragraphs: [
-          "Modern teams have more ways to work together than ever, but manuscript collaboration still breaks down because the work spans too many disconnected surfaces. Drafting, references, figures, comments, approvals, and final exports often live in different systems.",
-          "That fragmentation creates ambiguity. People stop knowing which version is current, where feedback belongs, and whether a change in one place has implications elsewhere.",
-        ],
-      },
-      {
-        id: "handoff-costs",
-        title: "The hidden cost of handoffs",
-        paragraphs: [
-          "Every handoff between collaborators creates an opportunity for drift. The person editing the results section may not have the latest figure context. The person fixing references may not see a structural change in the introduction. The person preparing the submission may be working from a slightly stale export.",
-          "Those are not edge cases. They are the daily reality of manuscript work for many labs and teams.",
-        ],
-      },
-      {
-        id: "what-better-collaboration-looks-like",
-        title: "What better collaboration looks like",
-        paragraphs: [
-          "Better collaboration means fewer translation layers. The manuscript, comments, data references, and revision logic should live close enough together that collaborators can move with confidence.",
-          "It also means assistants need access to the same context the team has, so they can help with revision, summaries, and formatting without forcing more copy-paste between tools.",
-        ],
-      },
-      {
-        id: "the-goal",
-        title: "The goal",
-        paragraphs: [
-          "The goal is not just easier co-editing. The goal is making the entire process of collaborative scientific writing less fragile.",
-          "When teams feel less operational drag, they can spend more energy on the work that actually matters.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "how-labs-keep-manuscript-momentum",
-    title: "How labs keep manuscript momentum after the first draft",
-    excerpt:
-      "What separates teams that finish strong from teams that stall after a promising first version.",
-    metaDescription:
-      "How research teams maintain manuscript momentum after the first draft and avoid revision stalls.",
-    category: "Collaboration",
-    date: "2026-02-16",
-    dateLabel: "February 16, 2026",
-    readTime: "5 min read",
-    authorName: "Enjamb team",
-    authorRole: "Workflow research",
-    sections: [
-      {
-        id: "the-first-draft-is-not-the-hard-part",
-        title: "The first draft is not the hard part",
-        paragraphs: [
-          "For many labs, the hardest part of a manuscript is not getting the first full version on the page. It is maintaining momentum once that draft exists and everyone starts seeing what still needs work.",
-          "The first draft creates optimism. The revision phase tests discipline.",
-        ],
-      },
-      {
-        id: "why-teams-stall",
-        title: "Why teams stall",
-        paragraphs: [
-          "Stalls happen when ownership gets fuzzy, comments pile up without decisions, or no one is responsible for converting review into a concrete next version.",
-          "Momentum also drops when the manuscript becomes emotionally heavier. The closer a draft gets to done, the easier it is for every unresolved detail to feel more consequential.",
-        ],
-      },
-      {
-        id: "practices-that-help",
-        title: "Practices that help",
-        paragraphs: [
-          "Teams that keep moving tend to use a small set of simple practices. They review on a cadence, they decide quickly, and they preserve a clean source of truth for the next round.",
-        ],
-        bullets: [
-          "One owner for each active revision cycle.",
-          "A clear rule for when comments become edits.",
-          "Short checkpoints that end with decisions, not just discussion.",
-        ],
-      },
-      {
-        id: "finishing-is-a-system",
-        title: "Finishing is a system",
-        paragraphs: [
-          "Finishing a manuscript is not just a matter of motivation. It is a systems problem.",
-          "When the workflow reduces ambiguity, teams can keep moving even when the draft is in its messy middle.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "what-reviewer-response-work-really-costs",
-    title: "What reviewer response work really costs",
-    excerpt:
-      "Reviewer responses look small on paper, but they often expand into one of the most expensive phases of the writing cycle.",
-    metaDescription:
-      "Why reviewer response work becomes one of the most expensive parts of the manuscript cycle.",
-    category: "Publishing",
-    date: "2026-02-12",
-    dateLabel: "February 12, 2026",
-    readTime: "5 min read",
-    authorName: "Enjamb team",
-    authorRole: "Publishing workflows",
-    sections: [
-      {
-        id: "responses-are-more-than-letters",
-        title: "Responses are more than letters",
-        paragraphs: [
-          "A reviewer response is rarely just a letter. It is a bundle of linked work: manuscript edits, figure updates, source checks, reference changes, and coordination across authors.",
-          "That is why the response phase often feels larger than the comment list suggests.",
-        ],
-      },
-      {
-        id: "where-the-cost-comes-from",
-        title: "Where the cost comes from",
-        paragraphs: [
-          "The real cost comes from synchronization. Teams need to ensure that every promised change in the response document is actually reflected in the manuscript and supporting files.",
-          "When those systems are disconnected, confidence drops and review time increases.",
-        ],
-      },
-      {
-        id: "what-better-response-work-needs",
-        title: "What better response work needs",
-        paragraphs: [
-          "The response workflow should connect comments, edits, and supporting evidence in one place. Otherwise the team ends up manually rebuilding trust in the package before resubmission.",
-        ],
-        bullets: [
-          "A linked view of reviewer comments and resulting manuscript changes.",
-          "A way to assign response ownership without losing shared context.",
-          "Clear evidence for what changed and where.",
-        ],
-      },
-      {
-        id: "less-drag-more-confidence",
-        title: "Less drag, more confidence",
-        paragraphs: [
-          "The best reviewer response process does not just make the team faster. It makes the resubmission package easier to trust.",
-          "That matters because confidence, not just speed, is what determines whether the team is ready to send the work back out.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "how-research-teams-decide-what-to-automate",
-    title: "How research teams decide what to automate first",
-    excerpt:
-      "The right first automation target is usually not the flashiest one. It is the one that removes the most repeated drag.",
-    metaDescription:
-      "How research teams can choose the highest-value automation targets first.",
-    category: "AI workflows",
-    date: "2026-02-08",
-    dateLabel: "February 8, 2026",
-    readTime: "5 min read",
-    authorName: "Enjamb team",
-    authorRole: "Product systems",
-    sections: [
-      {
-        id: "start-with-repeated-friction",
-        title: "Start with repeated friction",
-        paragraphs: [
-          "Teams often get excited about automating the most visible task in the workflow. But the best place to start is usually the most repeated source of drag, not the most impressive demo.",
-          "Repeated friction compounds. If a team loses small amounts of time every day to formatting, file organization, or revision tracking, the annual cost becomes meaningful very quickly.",
-        ],
-      },
-      {
-        id: "good-first-targets",
-        title: "Good first targets",
-        paragraphs: [
-          "A good first target is high-frequency, low-ambiguity, and easy to verify. It should save time without introducing a trust problem.",
-        ],
-        bullets: [
-          "Template conformance and format checks.",
-          "Citation cleanup and reference organization.",
-          "Summarizing change requests into structured next steps.",
-        ],
-      },
-      {
-        id: "bad-first-targets",
-        title: "Bad first targets",
-        paragraphs: [
-          "A bad first target is one where the output is hard to judge, expensive to correct, or likely to create a debate about ownership. Those can still be valuable later, but they are not where most teams should begin.",
-        ],
-      },
-      {
-        id: "build-trust-in-steps",
-        title: "Build trust in steps",
-        paragraphs: [
-          "Automation adoption works best when the team can build trust incrementally. One reliable win creates permission for the next.",
-          "That is why choosing the first automation target carefully matters so much.",
+          "There is a future where working with an AI agent feels as normal as opening a pipette. Today, agents still feel new and their ROI can be hard to quantify for a skeptical PI. But so did sequencing once, and so did gene synthesis, and so did the personal computer. Costs became standard line items because the capabilities were worth it.",
+          "The same shift is happening here. Running agent-driven literature reviews, orchestrating analyses, drafting grant proposals, and executing multi-step scientific workflows will become as routine as paying for reagents or instrument time.",
+          "When that happens, the bottleneck is no longer bandwidth. It's imagination — the questions you think to ask.",
+          "That is the future we are building toward at Enjamb. Not AI that replaces researchers, but an environment that lets researchers spend more of their time doing what drew them to research in the first place: asking hard questions, interpreting surprising results, and chasing the breakthroughs that move science forward.",
+          "An abundance of discoveries.",
         ],
       },
     ],

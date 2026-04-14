@@ -7,349 +7,244 @@ import {
 
 const sections: LegalSection[] = [
   {
-    id: "introduction-and-scope",
-    title: "Introduction & Scope",
-    paragraphs: [
-      "These Terms of Service (the \"Terms\") constitute the formal agreement governing your access to and use of the website at enjamb.org (the \"Site\") and all associated software, products, and services (the \"Services\") provided by Enjamb LLC (\"Enjamb,\" \"we,\" or \"us\"). By proceeding to use the Services, you are legally assenting to be bound by these Terms.",
-      "Should you be accessing the Services on behalf of an institution, research organization, or corporation, your acceptance affirms that you possess the requisite authority to legally bind that entity, with \"you\" and \"your\" subsequently referring to that organization.",
-      "Continued use of the Services is conditioned upon compliance with these Terms and all applicable laws, ensuring you are legally empowered to form this contract.",
-      "Acknowledge that the Services are dynamic; they may be stopped, suspended, or modified by Enjamb at any time without requiring prior notification to you.",
+    id: "introduction",
+    title: "Introduction",
+    content: [
+      "**Effective date:** 2026-04-14",
+      "These Terms of Service (\"Terms\") govern your access to and use of enjamb.org, app.enjamb.org, and all related software, APIs, and services (collectively, the \"Services\") provided by **Enjamb Labs, Inc.**, a Delaware corporation (\"Enjamb,\" \"we,\" \"us,\" or \"our\").",
+      "By creating an account, accessing, or using the Services, you agree to be bound by these Terms. If you do not agree, do not use the Services.",
+      "If you are using the Services on behalf of an organization, you represent that you have authority to bind that organization to these Terms, and \"you\" and \"your\" refer to that organization.",
     ],
   },
   {
-    id: "1-1-customer-ownership-rights-grant",
-    title: "1.1 Customer Ownership & Rights Grant",
-    paragraphs: [
-      "Enjamb explicitly states it does not claim ownership of \"Your Content,\" which encompasses all data you upload, create, and provide, such as manuscript files (for example, .docx files), comments, and other information.",
-      "The Customer grants Enjamb only the limited, necessary rights to effectively provide and improve the Services. These operational rights include hosting, storing, processing, and transmitting Your Content to execute user-initiated actions, such as facilitating collaboration, running the proprietary AI-powered analysis, and integrating with any designated external storage solution.",
+    id: "1-definitions",
+    title: "1. Definitions",
+    content: [
+      {
+        ul: [
+          "**\"Account\"** means the credentialed user account that identifies you on the Services.",
+          "**\"Organization\"** means a workspace tier that groups multiple Accounts under a shared billing entity and shared Projects.",
+          "**\"Project\"** means a research workspace inside the Services containing files (documents, data, figures, references, tasks, chat threads, and related metadata).",
+          "**\"Your Content\"** means any content you upload to, create in, or generate through the Services, including Projects, files, text, images, chat inputs, agent inputs and outputs, and references.",
+          "**\"AI Features\"** means the agentic research assistant and automated processing features integrated into the Services.",
+          "**\"Sub-processor\"** means a third-party service Enjamb uses to provide the Services (see Section 6).",
+        ],
+      },
     ],
   },
   {
-    id: "1-2-third-party-sub-processors-and-infrastructure",
-    title: "1.2 Third-Party Sub-processors & Infrastructure",
-    paragraphs: [
-      "The limited rights granted to Enjamb necessarily extend to its affiliates and trusted third-party service providers.",
-      "Specifically, the Terms identify Supabase as the provider of the core database and storage infrastructure utilized to support the Services. This delegation of operational necessity is essential for service delivery and function.",
+    id: "2-accounts-and-organizations",
+    title: "2. Accounts and Organizations",
+    content: [
+      "**2.1 Eligibility.** You must be at least 18 years old and legally able to form a binding contract.",
+      "**2.2 Registration.** You will provide accurate and current account information and keep it up to date.",
+      "**2.3 Credentials and activity.** You are responsible for safeguarding your login credentials and for all activity occurring under your Account. You agree to notify us promptly at help@enjamb.org of any unauthorized access or suspected breach.",
+      "**2.4 Organizations and member roles.** When you create or join an Organization, access to Projects within it is governed by the Organization's member and guest roles. Organization owners and admins control membership, billing, and visibility settings. A user invited only to a specific Project (\"guest\") has access to that Project but is not considered a full member of the Organization.",
+      "**2.5 Invitations and guests.** You may invite others to collaborate on Organizations or specific Projects by email. Invitations may be revoked by the inviter at any time. Removing a user from an Organization also terminates that user's access to all Projects in that Organization unless they are separately invited as a guest.",
     ],
   },
   {
-    id: "1-3-customer-responsibilities-for-content",
-    title: "1.3 Customer Responsibilities for Content",
-    paragraphs: [
-      "You maintain sole responsibility for your conduct while using the Services, the inherent nature and content of Your Content, and any communication with others.",
-      "This responsibility includes ensuring you hold the necessary rights and permissions to use and share Your Content in a manner compliant with these Terms.",
-      "While Enjamb has no obligation to monitor content for accuracy or legality, it retains the right, at its discretion, to review content for policy compliance and remove any content deemed inappropriate or non-compliant.",
+    id: "3-your-content",
+    title: "3. Your Content",
+    content: [
+      "**3.1 Ownership.** You retain all ownership rights in Your Content. Enjamb does not claim ownership of any data, files, or material you upload or create.",
+      "**3.2 License to operate the Services.** To provide the Services, you grant Enjamb a worldwide, non-exclusive, royalty-free license to host, store, copy, process, transmit, index, render, and display Your Content, and to create reasonable derivatives (such as thumbnails, search indexes, caches, and format conversions) solely to the extent necessary to operate, maintain, secure, and improve the Services for you and the users you share Your Content with. This license ends when you delete the relevant content or close your Account, subject to reasonable backup retention periods.",
+      "**3.3 Your responsibilities.** You represent and warrant that you have all rights, licenses, consents, and permissions necessary to upload and share Your Content through the Services, and that Your Content does not infringe any third party's rights or violate any law.",
+      "**3.4 No obligation to monitor.** Enjamb is not obligated to monitor Your Content, but we reserve the right to review, disable access to, or remove content we reasonably believe violates these Terms or applicable law.",
     ],
   },
   {
-    id: "2-1-ai-component-definitions",
-    title: "2.1 AI Component Definitions",
-    paragraphs: [
-      "This section governs the use of Enjamb's artificial intelligence features, collectively referred to as \"Enjamb AI,\" which includes the proprietary model Enjamb Cessera and the assistant Anaphora.",
-      "Input is defined as the specific content you provide to the AI, such as a manuscript snippet or reviewer comment. Output is defined as the content subsequently generated and returned by Enjamb AI, such as a summary, suggestion, or draft rebuttal.",
-      "Both Inputs and Outputs are explicitly classified as components of Your Content under these Terms.",
+    id: "4-ai-features",
+    title: "4. AI Features",
+    content: [
+      "**4.1 How it works.** The Services include AI-assisted research tools. These features rely on large language models and other AI systems operated by third-party providers (see Section 6). Enjamb does not operate its own proprietary foundation models; we orchestrate and route to third-party models on your behalf.",
+      "**4.2 Inputs and Outputs.** \"Input\" means content you submit to AI Features (prompts, attached files, selections, and related context). \"Output\" means content returned by AI Features (text, drafts, structured data, figures). Both are part of Your Content under these Terms.",
+      "**4.3 No training on your private content.** Enjamb does not use Your Content (including Inputs and Outputs) to train Enjamb AI models. Our third-party model providers contractually commit, for their enterprise API tiers that Enjamb uses, to not train their models on API traffic from Enjamb. If this position changes for a specific provider, we will update these Terms and notify active users.",
+      "**4.4 AI limitations and your responsibility.** AI Outputs are probabilistic and may be incorrect, incomplete, biased, or otherwise unsuitable. You are solely responsible for reviewing, verifying, and deciding whether to rely on any Output. Do not use Outputs as authoritative medical, legal, financial, or safety advice without independent verification.",
+      "**4.5 Autonomy and tool use.** The Services' AI agent may read, write, and modify files within your Project on your behalf, including editing documents, running search queries against third-party databases and websites, generating figures, and other workspace actions. You acknowledge these actions are initiated by your instructions to the agent and are attributable to your Account.",
     ],
   },
   {
-    id: "2-2-ownership-and-training-restrictions",
-    title: "2.2 Ownership and Training Restrictions",
-    paragraphs: [
-      "As between the Customer and Enjamb, you retain ownership of your Inputs and Outputs, subject to applicable law.",
-      "A key contractual guarantee is that Enjamb will not use your unpublished manuscripts, comments, or other confidential Inputs or Outputs to train its AI models without your explicit, affirmative consent. This serves as a significant safeguard for research and proprietary data provided to the AI features.",
+    id: "5-third-party-integrations",
+    title: "5. Third-Party Integrations",
+    content: [
+      "Certain features integrate optional third-party services under your control (for example, Zotero reference sync, GitHub repository linking, Stripe for payments). Your use of those integrations is subject to each provider's own terms and privacy policies, and to any additional permissions you grant. Enjamb is not responsible for the availability, accuracy, or conduct of third-party services.",
     ],
   },
   {
-    id: "2-3-user-responsibility-for-output",
-    title: "2.3 User Responsibility for Output",
-    paragraphs: [
-      "Due to the probabilistic nature inherent in artificial intelligence technology, generated Outputs may not be unique, and it is possible that other users could receive functionally similar outputs.",
-      "You bear sole responsibility for all use of the generated Outputs. Consequently, the Customer must maintain diligence, thoroughly reviewing all Outputs for accuracy, completeness, and suitability before any practical application or reliance.",
+    id: "6-sub-processors",
+    title: "6. Sub-processors and Service Infrastructure",
+    content: [
+      "To deliver the Services, Enjamb uses a set of trusted third-party sub-processors. Each sub-processor is contractually bound to security and confidentiality obligations no less protective than those in these Terms. The current list, to the best of our knowledge as of the effective date, is:",
+      {
+        table: {
+          headers: ["Name", "Purpose"],
+          rows: [
+            ["Supabase", "Cloud database, authentication, and storage"],
+            ["Railway", "Application hosting and infrastructure"],
+            ["Anthropic", "AI language model services"],
+            ["OpenAI", "AI language model services"],
+            ["E2B", "Sandboxed code execution environments"],
+            ["Resend", "Transactional email delivery"],
+            ["Stripe", "Payment processing and billing"],
+            ["PostHog", "Product analytics"],
+            ["Firecrawl", "Web search and content extraction"],
+          ],
+        },
+      },
+      "In addition, the Services query public research databases on your behalf when you use research tools (Semantic Scholar, OpenAlex, arXiv, PubMed, bioRxiv, Crossref, protocols.io, and Grants.gov / simpler.grants.gov). We do not store these providers' proprietary data beyond what is necessary to display and cite results you request.",
+      "We may add or replace sub-processors. Material changes will be reflected in an updated version of these Terms. If you require advance notice of sub-processor changes under a paid plan, contact us to discuss enterprise terms.",
     ],
   },
   {
-    id: "3-1-security-commitments",
-    title: "3.1 Security Commitments",
-    paragraphs: [
-      "Enjamb acknowledges the serious nature of research data security. It commits to implementing appropriate technical and organizational measures to safeguard Your Content, protecting it specifically from accidental loss, misuse, or unauthorized access.",
-      "These measures include the crucial implementation of encryption for data both in transit and at rest, coupled with the use of robust and meticulous access control policies.",
+    id: "7-data-processing",
+    title: "7. Data Processing, Storage, and Security",
+    content: [
+      "**7.1 Data location.** Your Content is stored on Supabase infrastructure hosted in the region we designate for the Services (currently `us-east-2`). We do not currently offer customer-selectable data regions.",
+      "**7.2 Security measures.** Enjamb implements reasonable technical and organizational safeguards appropriate to the sensitivity of Your Content, including encryption in transit (TLS) and at rest, row-level security policies on multi-tenant data, scoped access tokens, secrets management, and logging of administrative actions. No system is perfectly secure; we cannot guarantee absolute security.",
+      "**7.3 Backups.** Routine backups are maintained by our infrastructure providers for disaster recovery and are retained for a limited period. Backups are not a substitute for your own retention practices.",
+      "**7.4 Privacy Policy.** Our handling of personal data is further described in our Privacy Policy, which is incorporated into these Terms by reference.",
     ],
   },
   {
-    id: "3-2-data-processing-and-storage-architecture",
-    title: "3.2 Data Processing and Storage Architecture",
-    paragraphs: [
-      "You acknowledge the specific architecture involved in handling your documents: documents are actively processed by Enjamb's self-hosted editor; the documents are then securely stored in your designated Supabase Storage bucket.",
-      "The location of this storage is within a specific geographical region that you select upon setup or configuration.",
+    id: "8-acceptable-use",
+    title: "8. Acceptable Use",
+    content: [
+      "You agree not to, and not to permit anyone acting through your Account to:",
+      {
+        ul: [
+          "Violate applicable law or the rights of any third party (including intellectual property, privacy, and publicity rights).",
+          "Upload content that is unlawful, infringing, malicious, or grossly offensive.",
+          "Use the Services to generate, distribute, or promote disinformation, harassment, CSAM, non-consensual intimate imagery, or content designed to deceive reviewers or violate research integrity standards.",
+          "Attempt to reverse engineer, decompile, or derive the source code of the Services, except to the extent expressly permitted by applicable law.",
+          "Probe, scan, or test the vulnerability of the Services without our prior written consent; breach or circumvent any security or authentication measures.",
+          "Resell, rent, or commercially exploit the Services outside the scope of your subscription.",
+          "Use the Services to train competing AI models or large-scale dataset collection.",
+          "Interfere with other users' access or with the integrity of the Services.",
+          "Abuse AI Features in ways that impose disproportionate cost or load on the infrastructure (e.g., automated scripting outside normal research workflows). We may enforce reasonable rate limits.",
+        ],
+      },
     ],
   },
   {
-    id: "3-3-manuscript-data-model",
-    title: "3.3 Manuscript Data Model",
-    paragraphs: [
-      "A fundamental aspect of Enjamb's security model is that it is not designed to permanently store your manuscript files on the primary application servers.",
-      "This architectural design choice reinforces the security posture by minimizing the surface area for unauthorized data access from the main application environment.",
+    id: "9-intellectual-property",
+    title: "9. Intellectual Property",
+    content: [
+      "**9.1 Our IP.** The Services, including their software, designs, trademarks, logos, documentation, and all non-Your-Content material, are the exclusive property of Enjamb or its licensors and are protected by copyright, trademark, and other laws. Except for the license granted in Section 9.2, nothing in these Terms transfers any Enjamb IP to you.",
+      "**9.2 License to use the Services.** Subject to your compliance with these Terms and payment of any applicable fees, Enjamb grants you a limited, non-exclusive, non-transferable, revocable license to access and use the Services for your internal research, academic, or business purposes, consistent with your subscription tier.",
+      "**9.3 Feedback.** If you provide suggestions, ideas, or feedback about the Services, you grant Enjamb a perpetual, irrevocable, royalty-free license to use that feedback for any purpose without obligation to you.",
     ],
   },
   {
-    id: "4-1-account-access-security",
-    title: "4.1 Account Access Security",
-    paragraphs: [
-      "You are accountable for securing the credentials used to access the Services and must agree not to divulge this information to any third party.",
-      "Because you are accountable for the account, you are responsible for all activity that occurs on your account, whether or not that activity was expressly authorized by you.",
-      "You must formally and immediately notify Enjamb of any detected or suspected unauthorized use of your account access credentials.",
+    id: "10-subscriptions-billing-and-trials",
+    title: "10. Subscriptions, Billing, and Trials",
+    content: [
+      "**10.1 Plans.** Features available to you depend on your subscription tier (Free, Pro, Lab, Enterprise). Tier details, seat counts, and usage limits are published on our pricing page and may change from time to time.",
+      "**10.2 Billing.** Paid subscriptions are billed in advance, recurring monthly or annually depending on the plan you select, via Stripe. Unless otherwise stated, fees are non-refundable once charged, except where required by law.",
+      "**10.3 Taxes.** Fees are exclusive of applicable taxes. You are responsible for any sales, use, VAT, or withholding taxes.",
+      "**10.4 Changes to pricing.** We may change prices on notice. Price changes apply to billing cycles beginning after the notice period.",
+      "**10.5 Seats, guests, and usage.** Organization plans are licensed by seat. Guest Accounts invited to specific Projects do not occupy a seat on the inviting Organization's plan, but the inviting Organization remains responsible for how those guests are used and configured.",
+      "**10.6 Overage.** Some plans include usage caps (AI credits, compute credits, storage). If you enable \"extra usage,\" you authorize Enjamb to bill you via Stripe for usage above your plan's included amount up to any limit you set.",
     ],
   },
   {
-    id: "4-2-legal-and-policy-compliance",
-    title: "4.2 Legal and Policy Compliance",
-    paragraphs: [
-      "You are required to adhere to all applicable laws and regulations in the context of your use of the Services.",
-      "Furthermore, you must not misuse the Services in any way and must specifically agree to fully comply with Enjamb's established Acceptable Use Policy.",
+    id: "11-beta-features",
+    title: "11. Beta and Experimental Features",
+    content: [
+      "Features designated \"Beta,\" \"Preview,\" \"Experimental,\" or similar are provided **AS IS** and **AS AVAILABLE** without warranties. They may be unstable, may change, or may be removed at any time. Data loss and defects are possible. Any feedback, logs, or usage data from Beta Features may be used by Enjamb to improve or develop the Services.",
     ],
   },
   {
-    id: "4-3-intellectual-property-adherence",
-    title: "4.3 Intellectual Property Adherence",
-    paragraphs: [
-      "Files and other content accessible within the Services may be subject to the intellectual property rights of third parties.",
-      "You are obligated not to copy, upload, download, or share files unless you possess the legal right or explicit permission to do so, thus ensuring respect for others' copyrights and intellectual property.",
+    id: "12-suspension-and-termination",
+    title: "12. Suspension and Termination",
+    content: [
+      "**12.1 Your right to terminate.** You may stop using the Services and delete your Account at any time. Paid subscriptions continue through the end of the paid period unless cancelled earlier.",
+      "**12.2 Our right to suspend or terminate.** We may suspend or terminate your Account or an Organization's access at any time for breach of these Terms, for actions that threaten the security or integrity of the Services, for non-payment of fees, or as required by law.",
+      "**12.3 Export on termination.** Unless we terminate for cause related to illegal activity, fraud, or a material security risk, we will make a reasonable effort to provide you an opportunity to export Your Content before deletion.",
+      "**12.4 Effect of termination.** Upon termination, your license to use the Services ends. Enjamb will delete Your Content from active systems within a reasonable period, subject to residual copies in backups and legal retention obligations. Provisions that by their nature should survive termination (including Sections 3.1, 4.4, 8, 9, 13, 14, 15, 16, 18) survive.",
     ],
   },
   {
-    id: "5-1-ownership-and-protection-of-service-ip",
-    title: "5.1 Ownership and Protection of Service IP",
-    paragraphs: [
-      "The Services, including all underlying technology, intellectual property, and proprietary materials, are the sole property of Enjamb or its licensors and are comprehensively protected by applicable copyright, trademark, and various other intellectual property laws.",
-      "These Terms are structured as a license to use the Services, and it is explicitly stated that nothing in this Agreement shall operate to transfer any intellectual property rights in any part of the Service from Enjamb to the Customer.",
+    id: "13-disclaimers",
+    title: "13. Disclaimers",
+    content: [
+      "**13.1 AS IS.** Except as expressly stated, the Services are provided **AS IS** and **AS AVAILABLE**. To the maximum extent permitted by law, Enjamb disclaims all warranties, whether express, implied, statutory, or otherwise, including warranties of merchantability, fitness for a particular purpose, non-infringement, and any warranties arising from course of dealing or trade usage.",
+      "**13.2 No uptime guarantee.** We do not warrant that the Services will be uninterrupted, error-free, or free of harmful components, or that any data will be preserved without loss.",
+      "**13.3 AI Outputs.** We specifically do not warrant that AI Outputs will be accurate, reliable, or suitable for any particular purpose. See Section 4.4.",
     ],
   },
   {
-    id: "5-2-permitted-scope-of-use-and-restrictions",
-    title: "5.2 Permitted Scope of Use and Restrictions",
-    paragraphs: [
-      "The Services are fundamentally provided for your own internal and personal use.",
-      "For customers who subscribe to a paid tier, the usage license is expanded to permit use for internal business or research purposes, which must be conducted strictly subject to all provisions within these Terms.",
-      "The Customer is expressly prohibited from otherwise using, reselling, or commercializing any portion of the Service, its features, or its output without first securing the prior written agreement and consent of Enjamb.",
+    id: "14-limitation-of-liability",
+    title: "14. Limitation of Liability",
+    content: [
+      "**14.1 Excluded damages.** To the maximum extent permitted by law, neither Enjamb nor its affiliates, officers, directors, employees, agents, suppliers, or licensors will be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, or for loss of profits, revenue, data, use, goodwill, or other intangible losses, arising out of or relating to the Services, regardless of the theory of liability and even if advised of the possibility of such damages.",
+      "**14.2 Cap.** In all other respects, Enjamb's aggregate liability for all claims arising out of or relating to the Services in any twelve-month period will not exceed the greater of (a) the amounts actually paid by you to Enjamb for the Services during the twelve months preceding the event giving rise to the claim, or (b) one hundred U.S. dollars (USD $100).",
+      "**14.3 Basis of the bargain.** The limitations in this Section are a fundamental basis of the bargain between you and Enjamb. They apply even if a remedy fails its essential purpose.",
     ],
   },
   {
-    id: "6-1-status-and-absence-of-warranty",
-    title: "6.1 Status and Absence of Warranty",
-    paragraphs: [
-      "Enjamb may, from time to time and at its discretion, offer certain features, products, or services that are designated as \"Beta,\" \"Prototype,\" or \"Early Release.\"",
-      "These Beta Services are provided to the Customer on an \"AS IS\" basis, without any form of warranty, whether express or implied.",
-      "The Customer accepts that these features are under development, may not perform as expected, and may contain defects or errors.",
+    id: "15-indemnification",
+    title: "15. Indemnification",
+    content: [
+      "You will defend, indemnify, and hold harmless Enjamb and its affiliates, officers, directors, employees, and agents from and against any third-party claims, damages, liabilities, losses, and expenses (including reasonable attorneys' fees) arising out of or related to: (a) Your Content; (b) your use of the Services in violation of these Terms or applicable law; or (c) your violation of any third party's rights.",
     ],
   },
   {
-    id: "6-2-customer-risk-and-feedback-usage",
-    title: "6.2 Customer Risk and Feedback Usage",
-    paragraphs: [
-      "Any decision by the Customer to utilize or access Beta Services is made entirely at their own risk.",
-      "The Customer further acknowledges that any feedback or suggestions provided regarding the Beta Services, along with any data collected from their usage, may be used by Enjamb to improve, enhance, or develop its current and future products and service offerings.",
+    id: "16-governing-law-and-disputes",
+    title: "16. Governing Law and Disputes",
+    content: [
+      "**16.1 Governing law.** These Terms are governed by the laws of the State of Delaware, without regard to its conflict of laws principles, and applicable U.S. federal law.",
+      "**16.2 Venue.** Except as otherwise agreed, any dispute arising out of or relating to these Terms or the Services will be brought exclusively in the state or federal courts located in the State of Delaware, and the parties consent to the personal jurisdiction and venue of those courts.",
+      "**16.3 Informal resolution.** Before filing a claim, you agree to first contact us at help@enjamb.org and attempt in good faith to resolve the dispute informally.",
+      "**16.4 No class actions.** To the extent permitted by law, you and Enjamb each waive the right to participate in a class action or collective proceeding.",
+      "**16.5 Export and sanctions compliance.** You represent that you are not located in, and are not a national or resident of, any country subject to comprehensive U.S. sanctions, and that you are not listed on any U.S. government denied-party list. You agree not to use the Services in violation of U.S. export control laws.",
     ],
   },
   {
-    id: "7-1-customer-right-to-cease-use",
-    title: "7.1 Customer Right to Cease Use",
-    paragraphs: [
-      "The Customer retains the unconditional right to stop using the Enjamb Services at any time without cause or penalty, though outstanding financial obligations may remain.",
-      "This action effectively terminates the rights granted to the Customer under this Agreement.",
+    id: "17-changes-to-these-terms",
+    title: "17. Changes to These Terms",
+    content: [
+      "We may update these Terms from time to time. If we make material changes, we will notify you by email, in-product notice, or by updating the Effective date above and providing at least thirty (30) days' notice where feasible. Your continued use of the Services after changes take effect constitutes acceptance of the revised Terms.",
     ],
   },
   {
-    id: "7-2-enjamb-right-to-suspend-or-terminate",
-    title: "7.2 Enjamb's Right to Suspend or Terminate",
-    paragraphs: [
-      "Enjamb explicitly reserves the right to suspend or terminate the Services and your account at any time, with or without cause or prior notice.",
-      "Grounds for termination include, but are not limited to, non-compliance with these Terms.",
-      "If Enjamb chooses to terminate an account without cause, it commits to making a reasonable effort to provide the Customer with a final opportunity to export or retrieve Your Content before full data deletion occurs.",
+    id: "18-miscellaneous",
+    title: "18. Miscellaneous",
+    content: [
+      "**18.1 Entire agreement.** These Terms, together with any order form, enterprise addendum, Privacy Policy, and Acceptable Use Policy referenced here, constitute the entire agreement between you and Enjamb regarding the Services, and supersede any prior or contemporaneous agreements.",
+      "**18.2 Independent contractors.** The parties are independent contractors. Nothing in these Terms creates a partnership, franchise, joint venture, agency, fiduciary, or employment relationship.",
+      "**18.3 Assignment.** You may not assign these Terms without our prior written consent. Enjamb may assign these Terms to an affiliate or to a successor in connection with a merger, acquisition, reorganization, or sale of substantially all its assets.",
+      "**18.4 Severability.** If any provision of these Terms is held unenforceable, that provision will be modified to the minimum extent necessary to make it enforceable, and the remaining provisions will remain in full force.",
+      "**18.5 Waiver.** A failure or delay by Enjamb to enforce any provision is not a waiver of that or any other provision.",
+      "**18.6 No third-party beneficiaries.** These Terms are for the benefit of you and Enjamb only. No other person or entity has any right to enforce these Terms.",
+      "**18.7 Force majeure.** Neither party is liable for delays or failures (other than payment obligations) caused by events beyond its reasonable control, including natural disasters, war, terrorism, labor disputes, government action, internet or telecommunications outages, and failures of third-party providers.",
+      "**18.8 Notices.** We may deliver notices to you by email, through the Services, or by posting on our site. You may send formal notices to us at help@enjamb.org.",
+      "**18.9 Publicity.** Enjamb may identify you as a customer (name and logo) on its website and marketing materials. You may opt out by contacting help@enjamb.org.",
     ],
   },
   {
-    id: "8-1-comprehensive-disclaimer",
-    title: "8.1 Comprehensive Disclaimer",
-    paragraphs: [
-      "To the absolute fullest extent permissible under applicable law, Enjamb, its affiliates, officers, employees, agents, suppliers, and licensors make no warranties whatsoever, whether express, implied, or statutory, regarding the Services.",
-    ],
-  },
-  {
-    id: "8-2-nature-of-service-provision",
-    title: "8.2 Nature of Service Provision",
-    paragraphs: [
-      "The Services are provided to the Customer strictly on an \"AS IS\" and \"AS AVAILABLE\" basis.",
-      "Enjamb comprehensively disclaims and excludes all implied warranties, including, without limitation, any warranties related to merchantability, fitness for a particular purpose, and non-infringement of third-party rights.",
-      "Enjamb does not warrant that the Services will be uninterrupted, error-free, or fully secure.",
-    ],
-  },
-  {
-    id: "9-1-exclusion-of-indirect-and-consequential-damages",
-    title: "9.1 Exclusion of Indirect and Consequential Damages",
-    paragraphs: [
-      "To the maximum extent permitted by applicable law, in no event will Enjamb, its affiliates, officers, employees, agents, suppliers, or licensors be held liable for any category of damages that includes any indirect, special, incidental, punitive, exemplary, or consequential damages.",
-      "This expansive exclusion is critical to the scope of Enjamb's financial responsibility.",
-    ],
-  },
-  {
-    id: "9-2-exclusion-of-business-and-data-losses",
-    title: "9.2 Exclusion of Business and Data Losses",
-    paragraphs: [
-      "Furthermore, the parties listed above shall not be liable for any loss of use, loss of data, loss of business, or loss of profits, regardless of the underlying legal theory invoked, including contract, tort, or strict liability.",
-      "This exclusion applies regardless of whether or not Enjamb had been warned of the possibility of such losses or damages occurring.",
-    ],
-  },
-  {
-    id: "10-1-entire-agreement",
-    title: "10.1 Entire Agreement",
-    paragraphs: [
-      "These Terms constitute the entire agreement between you and Enjamb with respect to the subject matter contained herein, and they supersede and replace any and all other prior or contemporaneous agreements, whether written or oral.",
-      "The parties agree that no external documents, negotiations, or understandings shall be incorporated into or form any part of this governing agreement unless expressly referenced herein.",
-    ],
-  },
-  {
-    id: "10-2-third-party-beneficiaries",
-    title: "10.2 Third-Party Beneficiaries",
-    paragraphs: [
-      "These Terms are created exclusively for the benefit of the contracting parties, Enjamb and the Customer.",
-      "The Agreement specifically states that it creates no third-party beneficiary rights. Consequently, no individual or entity, other than you or Enjamb, shall have any legal or equitable right whatsoever to enforce any provision contained within this Agreement.",
-    ],
-  },
-  {
-    id: "10-3-waiver-and-remedies",
-    title: "10.3 Waiver and Remedies",
-    paragraphs: [
-      "Enjamb's failure or delay to enforce a provision of these Terms shall not be construed as a permanent waiver of its right to enforce that provision later.",
-      "Furthermore, the remedies provided to Enjamb under these Terms are in addition to, and not exclusive of, any other remedies available to Enjamb at law or in equity.",
-    ],
-  },
-  {
-    id: "11-1-relationship-of-the-parties",
-    title: "11.1 Relationship of the Parties",
-    paragraphs: [
-      "The relationship established by these Terms is strictly that of independent contractors.",
-      "This Agreement is not intended to, and does not, create any form of partnership, franchise, joint venture, agency, fiduciary, or employment relationship between Enjamb and the Customer.",
-      "Neither party has the authority to bind the other or incur obligations on the other's behalf.",
-    ],
-  },
-  {
-    id: "11-2-notices",
-    title: "11.2 Notices",
-    paragraphs: [
-      "Enjamb may communicate general operational or service-related notices to all customers via email or through a mechanism on the Site.",
-      "All other formal notices required under this Agreement, particularly those related to breach or termination, must be in writing.",
-      "Such formal written notices are considered effective upon personal delivery or confirmed electronic transmission to the last known contact information on file for the respective party.",
-    ],
-  },
-  {
-    id: "11-3-waiver-and-cumulative-remedies",
-    title: "11.3 Waiver and Cumulative Remedies",
-    paragraphs: [
-      "No failure or delay by Enjamb in exercising any right or remedy under this Agreement will constitute a waiver of that right.",
-      "Furthermore, the remedies provided to Enjamb under these Terms are explicitly stated to be in addition to, and not exclusive of, any other remedies available to Enjamb at law or in equity.",
-    ],
-  },
-  {
-    id: "11-4-severability",
-    title: "11.4 Severability",
-    paragraphs: [
-      "If any provision of these Terms is determined by a court of competent jurisdiction to be contrary to law, unenforceable, or invalid, that provision shall be modified and interpreted by the court to best achieve the original commercial objectives to the fullest extent legally possible.",
-      "The remaining provisions of these Terms shall remain in full force and effect.",
-    ],
-  },
-  {
-    id: "11-5-assignment",
-    title: "11.5 Assignment",
-    paragraphs: [
-      "You may not assign any of your rights or obligations under these Terms, whether by operation of law or otherwise, and any attempt to do so is void.",
-      "Conversely, Enjamb may assign its rights under this Agreement to any of its affiliates or to any successor in interest of any business associated with the Services without requiring your prior consent.",
-      "This Agreement is binding upon and inures to the benefit of the parties and their respective successors and permitted assigns.",
-    ],
-  },
-  {
-    id: "11-6-subcontractors",
-    title: "11.6 Subcontractors",
-    paragraphs: [
-      "Enjamb reserves the right to use third-party subcontractors, such as Supabase, to assist in the performance of its obligations under this Agreement.",
-      "Enjamb will ensure that any such subcontractors are bound by contractual obligations no less protective than those set forth in these Terms, and Enjamb shall remain fully responsible for the acts, omissions, and fulfillment of the subcontracted obligations.",
-    ],
-  },
-  {
-    id: "11-7-publicity",
-    title: "11.7 Publicity (Extrapolated)",
-    paragraphs: [
-      "Enjamb may reference the Customer's relationship with Enjamb solely to include the Customer's name and logo on its website or in other marketing materials.",
-      "All other uses of each party's name, trademark, or logo for marketing or publicity purposes require the prior written approval and consent of the other party.",
-    ],
-  },
-  {
-    id: "11-8-governing-law",
-    title: "11.8 Governing Law",
-    paragraphs: [
-      "These Terms and any disputes or actions arising out of or related to them shall be governed by and construed in accordance with the laws of the State of Florida, without giving effect to its conflict of law provisions.",
-      "This establishes the primary legal framework for the contract.",
-    ],
-  },
-  {
-    id: "11-9-arbitration-agreement",
-    title: "11.9 Arbitration Agreement",
-    paragraphs: [
-      "The Enjamb Terms do not contain a mandatory arbitration agreement requiring disputes to be resolved through JAMS or similar services.",
-      "Therefore, any disputes that are not settled through negotiation may be brought in a judicial proceeding. The parties' judicial forum and venue will be determined by the Governing Law of Florida.",
-    ],
-  },
-  {
-    id: "11-10-force-majeure",
-    title: "11.10 Force Majeure",
-    paragraphs: [
-      "Except for the Customer's obligation to make payments, neither party shall be held liable for any delay or non-performance of its obligations where the cause is a Force Majeure Event, defined as unforeseeable circumstances beyond the party's control, such as natural disasters, acts of war or terrorism, or failures of telecommunications infrastructure.",
-      "The affected party's obligations are suspended for the duration of the event, provided prompt notice and reasonable mitigation efforts are undertaken.",
-    ],
-  },
-  {
-    id: "11-11-no-third-party-beneficiaries",
-    title: "11.11 No Third Party Beneficiaries",
-    paragraphs: [
-      "The parties expressly state that the covenants and terms set forth in this Agreement are intended solely for the benefit of the parties, Enjamb and the Customer, their successors, and permitted assigns.",
-      "Nothing in these Terms is intended to confer any legal or equitable right whatsoever upon any other person or entity to enforce any provision of this Agreement.",
-    ],
-  },
-  {
-    id: "11-12-export-control",
-    title: "11.12 Export Control",
-    paragraphs: [
-      "The Services and underlying Enjamb technology may be subject to export laws and regulations of the United States and other jurisdictions.",
-      "The Customer represents that it is not named on any U.S. government denied-party list and covenants that it shall not access or use the Services in violation of any applicable U.S. export law or regulation.",
-    ],
-  },
-  {
-    id: "11-13-entire-agreement",
-    title: "11.13 Entire Agreement",
-    paragraphs: [
-      "These Terms, along with any documents or exhibits explicitly referenced, represent the entire agreement between you and Enjamb with respect to the subject matter.",
-      "They supersede all prior written or oral agreements. Enjamb reserves the right to modify these Terms upon notice, and the Customer's continued use of the Services after such changes constitutes consent to the modified terms.",
-      "No terms on any Customer order documentation, such as purchase orders, shall be incorporated into this binding Agreement.",
-    ],
-  },
-  {
-    id: "contact-us",
-    title: "Contact Us",
-    paragraphs: [
-      "If you have any questions, comments, or concerns about this Agreement, please contact us at: help@enjamb.org",
-      "Looking for privacy details? See Privacy Policy.",
+    id: "contact",
+    title: "Contact",
+    content: [
+      "**Enjamb Labs, Inc.**",
+      "2 Marina Blvd, San Francisco, CA",
+      "help@enjamb.org",
+      "For questions about privacy, see our [Privacy Policy](/privacy-policy).",
     ],
   },
 ];
 
 export const metadata: Metadata = {
   title: "Terms of Service | Enjamb",
-  description: "Terms of Service for Enjamb.",
+  description:
+    "Terms governing your access to and use of enjamb.org, app.enjamb.org, and related Enjamb Labs services.",
 };
 
 export default function TermsOfServicePage() {
   return (
     <LegalDocumentPage
-      title="Terms of Service"
-      lastUpdated="November 19th, 2025"
+      title="Enjamb Terms of Service"
+      lastUpdated="2026-04-14"
       sections={sections}
     />
   );

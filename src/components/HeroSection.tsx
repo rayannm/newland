@@ -37,7 +37,7 @@ export function HeroSection() {
           <div className="grid h-full lg:grid-cols-[720px_minmax(0,1fr)]">
             {/* Left column - glass panel */}
             <div
-              className="relative flex h-full flex-col justify-center px-10 py-16 lg:px-12 lg:py-16"
+              className="relative flex h-full flex-col justify-center px-5 py-12 sm:px-8 lg:px-12 lg:py-16"
               style={{
                 background:
                   "linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02) 48%, rgba(255,255,255,0.04)), rgba(16,19,26,0.72)",
@@ -57,7 +57,7 @@ export function HeroSection() {
                 }}
               />
 
-              <div className="relative z-10 flex max-w-[600px] flex-col">
+              <div className="relative z-10 flex w-full flex-col lg:max-w-[600px]">
                 {/* Backed by */}
                 <div className="mb-10 flex flex-wrap items-center gap-2 text-lg font-medium tracking-tight text-white">
                   <span>Backed by</span>
@@ -79,7 +79,7 @@ export function HeroSection() {
                   for R&D teams.
                 </h1>
 
-                <p className="mt-4 max-w-[38rem] font-body text-[17px] leading-[1.55] tracking-[-0.015em] text-white/80">
+                <p className="mt-4 w-full font-body text-[17px] leading-[1.55] tracking-[-0.015em] text-white/80 lg:max-w-[38rem]">
                   Enjamb accelerates every stage of research — literature
                   review, methodology, data analysis, grants, and drafting —
                   with scientific rigor and repeatable execution at scale.
@@ -93,7 +93,9 @@ export function HeroSection() {
                     Log in
                   </a>
                   <a
-                    href="#request-demo"
+                    href="https://cal.com/enjamb/15min"
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-block bg-neutral-500 px-6 py-3 font-body text-sm font-medium text-white transition-colors hover:bg-neutral-700"
                   >
                     Request a Demo &rarr;
@@ -108,16 +110,16 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Trusted by researchers - scrolling logos */}
+      {/* Trusted by leading institutions - scrolling logos */}
       <div className="mx-auto max-w-[1620px] px-[5%]">
-        <div className="flex items-center py-4">
-          <div className="shrink-0 border-r border-[#b08968] pr-6">
+        <div className="flex flex-col gap-3 py-4 md:flex-row md:items-center md:gap-0">
+          <div className="shrink-0 text-center md:border-r md:border-[#b08968] md:pr-6 md:text-left">
             <p className="text-sm text-[#55677E]">
-              Trusted by researchers at<br /> leading institutions
+              Trusted by leading institutions
             </p>
           </div>
           <div
-            className="flex-1 overflow-hidden pl-6"
+            className="flex-1 overflow-hidden md:pl-6"
             style={{
               maskImage:
                 "linear-gradient(to right, black 0%, black calc(100% - 48px), transparent 100%)",

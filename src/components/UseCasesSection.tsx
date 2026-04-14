@@ -34,19 +34,19 @@ export function UseCasesSection() {
     <section className="w-full bg-[#101F33]">
       <div className="mx-auto max-w-[1620px] px-[4.5%]">
         {/* Vertical border lines */}
-        <div className="flex flex-col border-x border-white/30 px-[60px] py-20 lg:min-h-[998px]">
+        <div className="flex flex-col border-x border-white/30 px-6 py-14 md:px-10 md:py-20 lg:px-[60px] lg:min-h-[998px]">
           {/* Eyebrow */}
-          <p className="mb-4 font-body text-[16px] font-medium uppercase leading-none tracking-[3.2px] text-[#687E9B]">
+          <p className="mb-4 font-body text-[14px] font-medium uppercase leading-none tracking-[3.2px] text-[#687E9B] md:text-[16px]">
             USE CASES
           </p>
 
           {/* Heading */}
-          <h2 className="mb-4 font-heading text-[48px] font-medium leading-[57.6px] text-white">
+          <h2 className="mb-4 font-heading text-[32px] font-medium leading-[1.2] tracking-[-0.01em] text-white md:text-[40px] md:leading-[1.2] lg:text-[48px] lg:leading-[57.6px]">
             Supporting the full research lifecycle
           </h2>
 
           {/* Description - wider */}
-          <p className="font-body text-[19px] font-light leading-[1.55] text-[#D4DFE4]">
+          <p className="font-body text-[17px] font-light leading-[1.6] text-[#D4DFE4] md:text-[19px] md:leading-[1.55]">
             From early discovery, through development and validation, to
             submission and post-market, research and R&amp;D teams choose
             Enjamb to execute, automate, and accelerate the vital scientific
@@ -58,7 +58,7 @@ export function UseCasesSection() {
             {useCases.map((card) => (
               <div
                 key={card.title}
-                className="group flex cursor-pointer flex-col p-4 transition-colors duration-200 hover:bg-[#0a1729]"
+                className="group flex cursor-pointer flex-col px-1 py-4 transition-colors duration-200 hover:bg-[#0a1729] sm:px-2 md:p-4"
               >
                 {/* Card Image - wider, no radius */}
                 <div className="relative aspect-[16/10] w-full overflow-hidden">

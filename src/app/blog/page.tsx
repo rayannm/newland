@@ -45,18 +45,29 @@ export default function BlogPage() {
             </div>
             <Link
               href={`/blog/${featuredArticle.slug}`}
-              className="group grid grid-cols-1 overflow-hidden border border-[#b08968] md:grid-cols-2"
+              className="group grid grid-cols-1 overflow-hidden border border-[#b08968] md:grid-cols-2 md:min-h-[420px]"
             >
-              <div className="flex min-h-[240px] items-center justify-center border-b border-[#b08968] bg-[#efe2cd] px-8 py-12 md:min-h-full md:border-b-0 md:border-r">
-                <div className="text-center">
-                  <div className="text-[12px] font-medium uppercase tracking-[0.22em] text-[#55677E]">
-                    Enjamb Blog
-                  </div>
-                  <div className="mt-4 font-heading text-[34px] font-medium leading-[0.95] tracking-[-0.05em] text-[#b08968] md:text-[56px]">
-                    Enjamb
+              {featuredArticle.bannerImage ? (
+                <div className="relative aspect-[16/10] overflow-hidden border-b border-[#b08968] md:aspect-auto md:min-h-full md:border-b-0 md:border-r">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={featuredArticle.bannerImage}
+                    alt={featuredArticle.title}
+                    className="absolute inset-0 h-full w-full object-contain transition-transform duration-300 group-hover:scale-105 md:object-cover"
+                  />
+                </div>
+              ) : (
+                <div className="flex min-h-[240px] items-center justify-center border-b border-[#b08968] bg-[#efe2cd] px-8 py-12 md:min-h-full md:border-b-0 md:border-r">
+                  <div className="text-center">
+                    <div className="text-[12px] font-medium uppercase tracking-[0.22em] text-[#55677E]">
+                      Enjamb Blog
+                    </div>
+                    <div className="mt-4 font-heading text-[34px] font-medium leading-[0.95] tracking-[-0.05em] text-[#b08968] md:text-[56px]">
+                      Enjamb
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
               <div className="flex flex-col justify-center p-8 md:p-12 lg:p-14">
                 <div className="mb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#94a3b8]">
                   {featuredArticle.category}
@@ -135,16 +146,27 @@ function ArticleCard({
       href={`/blog/${article.slug}`}
       className="group flex flex-col overflow-hidden border border-[#b08968]"
     >
-      <div className="flex aspect-[16/10] items-center justify-center border-b border-[#b08968] bg-[#efe2cd] px-6 py-6 text-center">
-        <div>
-          <div className="text-[11px] font-medium uppercase tracking-[0.22em] text-[#55677E]">
-            {article.category}
-          </div>
-          <div className="mt-3 font-heading text-[28px] font-medium leading-[0.95] tracking-[-0.05em] text-[#b08968]">
-            Enjamb
+      {article.bannerImage ? (
+        <div className="relative aspect-[16/10] overflow-hidden border-b border-[#b08968]">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={article.bannerImage}
+            alt={article.title}
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+      ) : (
+        <div className="flex aspect-[16/10] items-center justify-center border-b border-[#b08968] bg-[#efe2cd] px-6 py-6 text-center">
+          <div>
+            <div className="text-[11px] font-medium uppercase tracking-[0.22em] text-[#55677E]">
+              {article.category}
+            </div>
+            <div className="mt-3 font-heading text-[28px] font-medium leading-[0.95] tracking-[-0.05em] text-[#b08968]">
+              Enjamb
+            </div>
           </div>
         </div>
-      </div>
+      )}
       <div className="flex flex-1 flex-col p-6">
         <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#94a3b8]">
           {article.category}

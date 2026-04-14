@@ -5,7 +5,7 @@ export function EnjambLogo({ className, ...props }: { className?: string } & Rec
     <span className={`inline-flex items-center gap-2 ${className || ""}`} {...props}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/images/enjamb-logo.png" alt="" width={28} height={28} className="h-7 w-7 object-contain" />
-      <span className="text-2xl font-bold tracking-[-0.02em] text-black">Enjamb</span>
+      <span className="text-[34px] font-extrabold leading-none tracking-[-0.03em] text-black">Enjamb</span>
     </span>
   );
 }
