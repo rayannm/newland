@@ -37,8 +37,8 @@ export default function BlogPage() {
       </div>
 
       <div className="mx-auto max-w-[1620px] px-[5%]">
-        {/* Featured article */}
-        {featuredArticle && activeCategory === "All" && (
+        {/* Featured article - shown if matches current filter */}
+        {featuredArticle && (activeCategory === "All" || featuredArticle.category === activeCategory) && (
           <section className="mt-14">
             <div className="mb-6 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#94a3b8]">
               Featured
