@@ -42,15 +42,16 @@ export function UseCasesSection() {
 
           {/* Heading */}
           <h2 className="mb-4 font-heading text-[48px] font-medium leading-[57.6px] text-white">
-            Supporting the full research lifecycle
+            Built for how scientific teams actually work
           </h2>
 
           {/* Description - wider */}
           <p className="mb-12 font-body text-[18px] font-light leading-[27px] text-[#687E9B]">
-            From early discovery, through development and validation, to
-            submission and post-market, research and R&amp;D teams choose
-            Enjamb to execute, automate, and accelerate the vital scientific
-            workflows that drive outcomes.
+            Enjamb helps researchers move from question to output faster,
+            whether that means reviewing the literature, analyzing data,
+            designing methods, finding funding, or drafting submission-ready
+            manuscripts. It is one workspace for the scientific workflows that
+            usually get split across too many tools.
           </p>
 
           {/* Cards Grid */}

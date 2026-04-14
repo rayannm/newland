@@ -2,36 +2,41 @@ export function ServicesSection() {
   return (
     <section className="w-full bg-background">
       <div className="mx-auto max-w-[1560px] px-[5%]">
-        {/* Vertical + horizontal borders wrapper */}
         <div className="border-x border-t border-[#b08968]">
-          <div className="px-[60px] pt-[80px] pb-[64px]">
-            <p className="font-body text-[16px] font-medium uppercase tracking-[3.2px] text-[#55677E]">
-              Professional services
-            </p>
-
-            <h2 className="mt-6 font-heading text-[32px] font-medium leading-tight text-[#101F33] md:text-[48px]">
-              Explore science. Automate work.
-              <br />
-              We&apos;ll support you all the way.
+          <div className="px-6 pb-10 pt-12 md:px-10 lg:px-[60px] lg:pb-[52px] lg:pt-[64px]">
+            <h2 className="font-serif text-[34px] font-normal leading-tight text-[#2a2622] md:text-[44px]">
+              Purpose-built for modern research
             </h2>
 
-            <p className="mt-6 font-body text-[16px] font-light leading-[27px] text-[#55677E] md:text-[18px]">
-              Leverage the expertise of Enjamb&apos;s PhD scientists to optimize
-              the way your R&amp;D teams work, codify your specialized workflows,
-              and accelerate the scientific decisions that really matter.
-              <br />
-              Our Science and Change Management teams bring cross-functional
-              experience in AI strategy and enterprise-level biomedical research
-              and development, providing end-to-end support - from strategic
-              alignment, deployment planning and adoption, to workflow execution
-              and ongoing research enablement.
+            <p className="mt-5 max-w-[780px] text-[18px] font-light leading-[1.7] text-[#6a655d]">
+              Enjamb brings together the tools, systems, and workflows research
+              teams rely on to move from first question to final output with
+              more speed, structure, and rigor.
             </p>
-          </div>
 
-          {/* Empty space with bottom border */}
-          <div className="h-20 border-t border-[#b08968]" />
+            <div className="mt-10 overflow-hidden rounded-[2px] border border-[#ece5d7] bg-white">
+              <div className="relative grid grid-cols-1 divide-y divide-[#ece5d7] md:grid-cols-3 md:divide-x md:divide-y-0">
+                {[
+                  { value: "136+", label: "Databases" },
+                  { value: "216+", label: "Software Packages" },
+                  { value: "164+", label: "Tools" },
+                ].map((stat) => (
+                  <div
+                    key={stat.label}
+                    className="flex min-h-[190px] flex-col items-center justify-center px-6 py-10 text-center md:min-h-[200px]"
+                  >
+                    <div className="font-serif text-[68px] font-normal leading-none text-[#111111] md:text-[74px]">
+                      {stat.value}
+                    </div>
+                    <div className="mt-3 w-full text-center font-serif text-[20px] font-normal italic leading-none text-[#2f2a26] md:text-[22px]">
+                      {stat.label}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
-        {/* Bottom horizontal line */}
         <div className="border-b border-[#b08968]" />
       </div>
     </section>

@@ -1,4 +1,11 @@
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
+
+import image2 from "../../image2.png";
+import image3 from "../../image3.png";
+import image4 from "../../image4.png";
+import image5 from "../../image5.png";
+import image6 from "../../image6.png";
+import image7 from "../../image7.png";
 
 interface Feature {
   eyebrow: string;
@@ -6,6 +13,7 @@ interface Feature {
   description: string;
   bullets?: { label: string; text: string }[];
   image: string;
+  backgroundImage: StaticImageData;
 }
 
 const features: Feature[] = [
@@ -33,6 +41,7 @@ const features: Feature[] = [
       },
     ],
     image: "/images/use-cases/target-identification.avif",
+    backgroundImage: image2,
   },
   {
     eyebrow: "DATA ANALYSIS & COMPUTATION",
@@ -58,6 +67,7 @@ const features: Feature[] = [
       },
     ],
     image: "/images/use-cases/novel-indications.avif",
+    backgroundImage: image3,
   },
   {
     eyebrow: "PRECISION METHODOLOGY DESIGN",
@@ -87,6 +97,7 @@ const features: Feature[] = [
       },
     ],
     image: "/images/use-cases/regulatory-filings.avif",
+    backgroundImage: image4,
   },
   {
     eyebrow: "INTELLIGENT GRANT DISCOVERY",
@@ -112,6 +123,7 @@ const features: Feature[] = [
       },
     ],
     image: "/images/use-cases/target-identification.avif",
+    backgroundImage: image5,
   },
   {
     eyebrow: "SCIENTIFIC FIGURES & VISUALIZATION",
@@ -141,6 +153,7 @@ const features: Feature[] = [
       },
     ],
     image: "/images/use-cases/novel-indications.avif",
+    backgroundImage: image6,
   },
   {
     eyebrow: "MANUSCRIPT DRAFTING & FORMATTING",
@@ -170,6 +183,7 @@ const features: Feature[] = [
       },
     ],
     image: "/images/use-cases/regulatory-filings.avif",
+    backgroundImage: image7,
   },
 ];
 
@@ -250,8 +264,15 @@ export function FeaturesSection() {
               </div>
 
               {/* Image */}
-              <div className="relative flex w-full items-center justify-center overflow-hidden lg:w-1/2">
-                <div className="relative aspect-[16/10] w-full">
+              <div
+                className="relative flex w-full items-center justify-center overflow-hidden lg:w-1/2"
+                style={{
+                  backgroundImage: `linear-gradient(rgba(16, 31, 51, 0.42), rgba(16, 31, 51, 0.42)), url(${feature.backgroundImage.src})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}
+              >
+                <div className="relative my-8 aspect-[16/10] w-[90%] overflow-hidden rounded-[24px] border border-white/15 shadow-[0_28px_80px_rgba(16,31,51,0.28)] lg:my-0 lg:w-[86%]">
                   <Image
                     src={feature.image}
                     alt={feature.title}
