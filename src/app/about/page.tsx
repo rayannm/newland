@@ -2,8 +2,8 @@ export default function AboutPage() {
   return (
     <div className="mx-auto max-w-[1560px] px-[5%] pb-20">
       {/* Box 1 — Our mission headline (touches top) */}
-      <div className="border border-[#b08968] border-t-0 px-10 py-20 lg:px-20 lg:py-28">
-        <h1 className="max-w-[1100px] font-heading text-[40px] font-medium leading-[1.15] tracking-[-0.02em] text-[#101F33] md:text-[56px] lg:text-[64px]">
+      <div className="border border-[#b08968] border-t-0 px-5 py-14 md:px-10 md:py-20 lg:px-20 lg:py-28">
+        <h1 className="max-w-[1100px] font-heading text-[32px] font-medium leading-[1.15] tracking-[-0.02em] text-[#101F33] md:text-[52px] lg:text-[60px]">
           <span className="text-[#82b4ea]">Our mission</span> is to accelerate
           scientific discovery through agentic AI built for how research
           actually works.
