@@ -10,19 +10,19 @@ interface UseCaseCard {
 
 const useCases: UseCaseCard[] = [
   {
-    image: "/images/use-cases/target-identification.avif",
+    image: "/images/use-cases/gemini-generated-mechanisms.png",
     title: "Uncover novel mechanisms",
     description:
       "Maximize the commercial value of your proprietary data. Deploy autonomous data agents to run complex statistical analyses on raw experimental CSVs and instantly cross-reference those findings against global literature. Rapidly test hypotheses, discover hidden biological links, and identify high-value white space without the bioinformatics bottleneck.",
   },
   {
-    image: "/images/use-cases/novel-indications.avif",
+    image: "/images/use-cases/gemini-generated-target-discovery.png",
     title: "Accelerate target discovery",
     description:
       "Collapse the research timeline from months to minutes. Enjamb\u2019s autonomous agents instantly synthesize millions of papers and extract validated methodologies, freeing your R&D scientists to focus on advancing novel targets to the bench rather than drowning in manual literature reviews.",
   },
   {
-    image: "/images/use-cases/regulatory-filings.avif",
+    image: "/images/use-cases/gemini-generated-regulatory.jpg",
     title: "Bulletproof regulatory and grant submissions",
     description:
       "Reach absolute confidence in your INDs, grants, and journal filings. Enjamb traces every scientific claim directly back to the exact source PDF. Let repeatable, agentic formatting workflows scale your lab\u2019s output, guarantee 100% compliance with strict submission guidelines, and eliminate the risk of administrative rejection.",
