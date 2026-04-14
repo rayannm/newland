@@ -24,8 +24,8 @@ export default function BlogPage() {
   return (
     <div className="pb-24">
       {/* Hero */}
-      <div className="border-b border-[#b08968] bg-[#f5ecd7] py-18 md:py-20">
-        <div className="mx-auto max-w-[1560px] px-[5%] text-center">
+      <div className="border-b border-[#b08968] bg-[#f5ecd7] py-16">
+        <div className="mx-auto max-w-[1620px] px-[5%] text-center">
           <h1 className="font-heading text-[48px] font-medium leading-[1.1] tracking-[-0.02em] text-[#101F33] md:text-[56px]">
             News & Updates
           </h1>
@@ -36,7 +36,7 @@ export default function BlogPage() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-[1560px] px-[5%]">
+      <div className="mx-auto max-w-[1620px] px-[5%]">
         {/* Featured article */}
         {featuredArticle && activeCategory === "All" && (
           <section className="mt-14">

@@ -11,30 +11,30 @@ interface UseCaseCard {
 const useCases: UseCaseCard[] = [
   {
     image: "/images/use-cases/target-identification.avif",
-    title: "Identify and prioritize targets",
+    title: "Uncover novel mechanisms",
     description:
-      "Save R&D scientists thousands of hours each year, and unlock a new level of revenue potential. Get biomedical clarity with mature agentic AI workflow automations built for target assessment.",
+      "Maximize the commercial value of your proprietary data. Deploy autonomous data agents to run complex statistical analyses on raw experimental CSVs and instantly cross-reference those findings against global literature. Rapidly test hypotheses, discover hidden biological links, and identify high-value white space without the bioinformatics bottleneck.",
   },
   {
     image: "/images/use-cases/novel-indications.avif",
-    title: "Discover novel indications",
+    title: "Accelerate target discovery",
     description:
-      "Unlock new revenue growth from existing assets. Find hidden links between drugs, targets, and diseases, generate and test hypotheses fast, and identify white space for strategic prioritization.",
+      "Collapse the research timeline from months to minutes. Enjamb\u2019s autonomous agents instantly synthesize millions of papers and extract validated methodologies, freeing your R&D scientists to focus on advancing novel targets to the bench rather than drowning in manual literature reviews.",
   },
   {
     image: "/images/use-cases/regulatory-filings.avif",
-    title: "Validate evidence for regulatory filings",
+    title: "Bulletproof regulatory and grant submissions",
     description:
-      "Reach consistent confidence in submissions. Confirm MoAs, trace outcomes to biology, and expedite concise, defensible summaries while repeatable workflows scale your effort and minimize manual review.",
+      "Reach absolute confidence in your INDs, grants, and journal filings. Enjamb traces every scientific claim directly back to the exact source PDF. Let repeatable, agentic formatting workflows scale your lab\u2019s output, guarantee 100% compliance with strict submission guidelines, and eliminate the risk of administrative rejection.",
   },
 ];
 
 export function UseCasesSection() {
   return (
     <section className="w-full bg-[#101F33]">
-      <div className="mx-auto max-w-[1560px] px-[4.5%]">
+      <div className="mx-auto max-w-[1620px] px-[4.5%]">
         {/* Vertical border lines */}
-        <div className="border-x border-[#1e3a5c] px-[60px] py-20">
+        <div className="flex flex-col border-x border-white/30 px-[60px] py-20 lg:min-h-[998px]">
           {/* Eyebrow */}
           <p className="mb-4 font-body text-[16px] font-medium uppercase leading-none tracking-[3.2px] text-[#687E9B]">
             USE CASES
@@ -42,27 +42,26 @@ export function UseCasesSection() {
 
           {/* Heading */}
           <h2 className="mb-4 font-heading text-[48px] font-medium leading-[57.6px] text-white">
-            Built for how scientific teams actually work
+            Supporting the full research lifecycle
           </h2>
 
           {/* Description - wider */}
-          <p className="mb-12 font-body text-[18px] font-light leading-[27px] text-[#687E9B]">
-            Enjamb helps researchers move from question to output faster,
-            whether that means reviewing the literature, analyzing data,
-            designing methods, finding funding, or drafting submission-ready
-            manuscripts. It is one workspace for the scientific workflows that
-            usually get split across too many tools.
+          <p className="font-body text-[19px] font-light leading-[1.55] text-[#D4DFE4]">
+            From early discovery, through development and validation, to
+            submission and post-market, research and R&amp;D teams choose
+            Enjamb to execute, automate, and accelerate the vital scientific
+            workflows that drive outcomes.
           </p>
 
           {/* Cards Grid */}
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 pt-20 md:grid-cols-2 lg:grid-cols-3">
             {useCases.map((card) => (
               <div
                 key={card.title}
-                className="group flex cursor-pointer flex-col"
+                className="group flex cursor-pointer flex-col p-4 transition-colors duration-200 hover:bg-[#0a1729]"
               >
                 {/* Card Image - wider, no radius */}
-                <div className="relative aspect-[2/1] w-full overflow-hidden">
+                <div className="relative aspect-[16/10] w-full overflow-hidden">
                   <Image
                     src={card.image}
                     alt={card.title}
@@ -73,19 +72,19 @@ export function UseCasesSection() {
                 </div>
 
                 {/* Card Content - grows to fill, pushes learn more to bottom */}
-                <div className="flex flex-1 flex-col pt-4">
-                  <h3 className="mb-4 font-heading text-[24px] font-medium leading-[1.4] text-white">
+                <div className="flex flex-1 flex-col pt-5">
+                  <h3 className="mb-4 font-heading text-[28px] font-medium leading-[1.3] text-white">
                     {card.title}
                   </h3>
-                  <p className="mb-6 font-body text-[14px] font-light leading-[21px] text-[#687E9B]">
+                  <p className="mb-6 font-body text-[17px] font-light leading-[1.55] text-[#D4DFE4]">
                     {card.description}
                   </p>
 
                   {/* Learn more - pushed to bottom */}
-                  <div className="mt-auto pt-2">
+                  <div className="mt-auto pt-10">
                     <a
                       href="#"
-                      className="inline-flex items-center gap-2 text-[14px] font-medium uppercase tracking-[1px] text-white transition-colors group-hover:text-[#FF5038]"
+                      className="inline-flex items-center gap-2 text-[15px] font-medium uppercase tracking-[1px] text-white transition-colors group-hover:text-[#FF5038]"
                     >
                       Learn more
                       <span className="transition-transform group-hover:translate-x-1">

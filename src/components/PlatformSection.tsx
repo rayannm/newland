@@ -46,7 +46,7 @@ export function PlatformSection() {
 
   return (
     <section className="w-full bg-background">
-      <div className="mx-auto max-w-[1560px] px-[4.5%]">
+      <div className="mx-auto max-w-[1620px] px-[4.5%]">
         {/* Heading composition - NO extra inner padding, sits at container edge */}
         <div className="flex flex-col gap-6 pt-20">
           {/* Eyebrow */}

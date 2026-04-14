@@ -1,7 +1,7 @@
 export function TestimonialSection() {
   return (
     <section className="w-full bg-[#101F33]">
-      <div className="mx-auto max-w-[1560px] px-[5%] py-20 text-center">
+      <div className="mx-auto max-w-[1620px] px-[5%] py-20 text-center">
         <h2 className="mx-auto max-w-[800px] font-heading text-[24px] font-medium italic leading-relaxed text-white">
           &ldquo;Enjamb helps us move from scattered notes and partial drafts to
           something coherent much faster. It feels less like wrestling with

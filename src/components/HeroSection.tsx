@@ -23,7 +23,7 @@ export function HeroSection() {
       `}</style>
 
       {/* Hero block */}
-      <div className="mx-auto max-w-[1560px] px-[5%]">
+      <div className="mx-auto max-w-[1620px] px-[5%]">
         <div
           className="relative mt-10 overflow-hidden lg:h-[720px]"
           style={{
@@ -109,7 +109,7 @@ export function HeroSection() {
       </div>
 
       {/* Trusted by researchers - scrolling logos */}
-      <div className="mx-auto max-w-[1560px] px-[5%]">
+      <div className="mx-auto max-w-[1620px] px-[5%]">
         <div className="flex items-center py-4">
           <div className="shrink-0 border-r border-[#b08968] pr-6">
             <p className="text-sm text-[#55677E]">

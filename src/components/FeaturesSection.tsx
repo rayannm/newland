@@ -190,7 +190,7 @@ const features: Feature[] = [
 export function FeaturesSection() {
   return (
     <section className="w-full bg-background">
-      <div className="mx-auto max-w-[1560px] px-[4.5%]">
+      <div className="mx-auto max-w-[1620px] px-[4.5%]">
         {/* Section header */}
         <div className="flex flex-col gap-6 pt-20">
           <p className="font-body text-[16px] font-medium uppercase leading-[1.5] tracking-[3.2px] text-[#55677E]">

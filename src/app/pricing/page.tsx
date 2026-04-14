@@ -158,7 +158,7 @@ export default function PricingPage() {
     <div className="pb-20">
       {/* Intro */}
       <section className="border-b border-[#b08968] bg-[#f5ecd7] py-20">
-        <div className="mx-auto max-w-[1560px] px-[5%] text-center">
+        <div className="mx-auto max-w-[1620px] px-[5%] text-center">
           <h1 className="font-heading text-[48px] font-medium leading-[1.1] tracking-[-0.02em] text-[#101F33] md:text-[64px]">
             Pricing
           </h1>
@@ -208,7 +208,7 @@ export default function PricingPage() {
       </section>
 
       {/* Pricing grid */}
-      <section className="mx-auto max-w-[1560px] px-[5%]">
+      <section className="mx-auto max-w-[1620px] px-[5%]">
         <div className="mt-16 grid grid-cols-1 gap-0 border border-[#b08968] md:grid-cols-2 lg:grid-cols-4">
           {TIERS.map((tier, i) => (
             <article
@@ -281,7 +281,7 @@ export default function PricingPage() {
       </section>
 
       {/* Comparison table */}
-      <section className="mx-auto mt-20 max-w-[1560px] px-[5%]">
+      <section className="mx-auto mt-20 max-w-[1620px] px-[5%]">
         <h2 className="font-heading text-[32px] font-medium leading-tight text-[#101F33] md:text-[40px]">
           Compare platforms
         </h2>

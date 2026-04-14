@@ -41,7 +41,7 @@ export function Navbar() {
   return (
     <>
       <nav className="sticky top-0 z-50 bg-background">
-        <div className="mx-auto flex h-[70px] max-w-[1560px] items-center justify-between px-[5%]">
+        <div className="mx-auto flex h-[70px] max-w-[1620px] items-center justify-between px-[5%]">
           {/* Logo */}
           <Link href="/" aria-label="Enjamb Home">
             <EnjambLogo className="text-[#101F33]" />

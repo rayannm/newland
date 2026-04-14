@@ -28,15 +28,16 @@ const footerLinkGroups = [
 export function Footer() {
   return (
     <footer className="w-full bg-[#D4DFE4]">
-      <div className="mx-auto max-w-[1560px] px-[5%] py-16">
+      <div className="mx-auto max-w-[1620px] px-[5%] py-16">
         {/* Footer top */}
         <div className="grid grid-cols-1 gap-[5%] lg:grid-cols-[360px_288px_288px_288px]">
           {/* Col 1: Logo + description + social */}
           <div>
             <EnjambLogo className="text-[#101F33]" />
             <p className="font-body mt-4 max-w-[350px] text-sm leading-relaxed text-[#55677E]">
-              Unlock scientific insights from external and internal information
-              at unprecedented levels of precision and efficiency.
+              Accelerate research and R&amp;D with autonomous agents that
+              synthesize, analyze, and execute across the scientific lifecycle
+              at breakthrough levels of precision and speed.
             </p>
             <div className="mt-6">
               <a href="#" aria-label="LinkedIn">
@@ -70,7 +71,7 @@ export function Footer() {
         {/* Footer bottom */}
         <div className="mt-12 flex items-center justify-between border-t border-[#687E9B]/60 pt-5">
           <p className="font-body text-sm text-[#55677E]">
-            &copy; 2026 Enjamb. All rights reserved.
+            &copy; 2026 Enjamb Labs. All rights reserved.
           </p>
         </div>
       </div>

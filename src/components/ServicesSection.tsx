@@ -1,7 +1,7 @@
 export function ServicesSection() {
   return (
     <section className="w-full bg-background">
-      <div className="mx-auto max-w-[1560px] px-[5%]">
+      <div className="mx-auto max-w-[1620px] px-[5%]">
         <div className="border-x border-t border-[#b08968]">
           <div className="px-6 pb-10 pt-12 md:px-10 lg:px-[60px] lg:pb-[52px] lg:pt-[64px]">
             <h2 className="font-serif text-[34px] font-normal leading-tight text-[#2a2622] md:text-[44px]">

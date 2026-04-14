@@ -1,7 +1,7 @@
 export function CTASection() {
   return (
     <section className="w-full bg-[#f5ecd7]">
-      <div className="mx-auto max-w-[1560px] px-[5%] pt-16 pb-28">
+      <div className="mx-auto max-w-[1620px] px-[5%] pt-16 pb-28">
         <div className="flex flex-col gap-8 md:flex-row md:gap-[5%]">
           {/* Left column (50%) */}
           <div className="flex-1">
